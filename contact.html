@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <picture>
+        <!-- Браузер сам выберет для него поддерживаемое разрешение идя по списку сверху вниз, при этом вначале указывают наимее поддерживаемые форматы, затем уже наиболее, jpg всегда в конце. -->
+
+        <!-- Подключение картинки для ретина дисплеев mobile -->
+        <source srcset="img@1x.avif 1x,
+                    img@2x.avif 2x,
+                    img@3x.avif 3x" 
+                media="(max-width: 400px)" 
+                type="image/avif">
+
+        <source srcset="img@1x.webp 1x,
+                    img@2x.webp 2x,
+                    img@3x.webp 3x" 
+                media="(max-width: 400px)" 
+                type="image/webp">
+
+        <source srcset="img@1x.jpg 1x,
+                    img@2x.jpg 2x,
+                    img@3x.jpg 3x" 
+                media="(max-width: 400px)">
+
+        <!-- Подключение картинки для ретина дисплеев пк  -->
+        <source srcset="img@1x.avif 1x,
+                    img@2x.avif 2x,
+                    img@3x.avif 3x" 
+                type="image/avif">
+
+        <source srcset="img@1x.webp 1x,
+                    img@2x.webp 2x,
+                    img@3x.webp 3x" 
+                type="image/webp">
+
+        <img srcset="imgre@2x.jpg 2x, img@2x.jpg 3x"
+             src="imgre@1x.jpg" 
+             alt="Девушка пьёт кофе">
+    </picture>
+
+</body>
+</html>
