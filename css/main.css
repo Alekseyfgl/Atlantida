@@ -1102,7 +1102,8 @@ body {
 }
 .swiper-slide .text-slider h2::before {
   position: absolute;
-  left: -8%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 44px;
   content: url("../img/icon/Line.png");
   text-align: center;
