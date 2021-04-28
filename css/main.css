@@ -1013,23 +1013,31 @@ body {
   align-items: center;
 }
 .header__logo h1 {
+  font-family: "Montserrat-bold";
   color: #757575;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.8px;
 }
 .header__logo img {
-  margin-right: 13px;
+  margin-right: 12px;
 }
 
-.header__list {
+.header__burger {
+  position: absolute;
+}
+
+nav ul {
   display: flex;
 }
-.header__list li a {
+nav ul li a {
   margin-right: 16px;
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 12px;
   text-transform: uppercase;
+}
+nav ul li a:hover {
+  opacity: 0.6;
 }
 
 .sotial-seties {
@@ -1049,17 +1057,11 @@ body {
 .sotial-seties a:first-child::before {
   content: none;
 }
-.sotial-seties .face-book svg {
-  width: 11px;
+.sotial-seties svg {
   height: 10px;
 }
-.sotial-seties .twitter svg {
-  width: 11px;
-  height: 9px;
-}
-.sotial-seties .behance svg {
-  width: 16px;
-  height: 10px;
+.sotial-seties svg:hover {
+  opacity: 0.6;
 }
 
 .wrapper-slider {
@@ -1153,7 +1155,6 @@ body {
 }
 
 .swiper-button-prev {
-  top: 26vmax;
   left: 14vw;
 }
 .swiper-button-prev svg {
@@ -1161,16 +1162,10 @@ body {
 }
 
 .swiper-button-next {
-  top: 26vmax;
   right: 14vw;
 }
 .swiper-button-next svg {
   margin-left: 2px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  top: 50vh;
 }
 
 .about-as {
@@ -1183,6 +1178,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+  padding-bottom: 64px;
 }
 .about-as .sub-wrapper h2 {
   color: #3e3d3d;
@@ -1223,7 +1219,6 @@ body {
   font-size: 13px;
   letter-spacing: 1.47px;
   font-family: "Montserrat-regular";
-  margin-bottom: 64px;
 }
 .about-as-button a {
   margin-right: 2px;
@@ -1231,7 +1226,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #3e3d3d;
   border: 2px solid #3e3d3d;
   width: 135px;
@@ -1255,10 +1250,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 1 19%;
+  flex: 0 1 25%;
   padding: 0 20px;
   color: #3e3d3d;
+  border-right: 2px solid #b0b0b0;
   font-family: "Montserrat-regular";
+}
+.icon-wrap .column:last-child {
+  border-right: none;
 }
 .icon-wrap .column img {
   margin-bottom: 21px;
@@ -1273,14 +1272,6 @@ body {
 }
 .icon-wrap .column p {
   font-size: 45px;
-}
-.icon-wrap .column::after {
-  content: " ";
-  position: absolute;
-  width: 1px;
-  height: 168px;
-  background-color: #b0b0b0;
-  right: -21%;
 }
 .icon-wrap .column:last-child::after {
   content: none;
@@ -1325,7 +1316,6 @@ body {
 .sub-wrapper-services p {
   font-family: "CrimsonText-roman";
   color: #cfcfcf;
-  font-family: "Crimson Text - Roman";
   font-size: 14px;
   letter-spacing: 1.4px;
   line-height: 2;

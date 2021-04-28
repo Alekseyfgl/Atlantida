@@ -20,27 +20,31 @@
     display: flex;
     align-items: center;
     h1 {
+        font-family: "Montserrat-bold";
         color: #757575;
         font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 1.8px;
     }
     img {
-        margin-right: 13px;
+        margin-right: 12px;
     }
 }
 .header__burger {
+    position: absolute;
 }
-.header__menu {
-}
-.header__list {
-    display: flex;
-    // margin-right: 194px;
-    li a {
-        margin-right: 16px;
-        color: #aaaaaa;
-        font-size: 12px;
-        text-transform: uppercase;
+nav{
+    ul {
+        display: flex;
+        li a {
+            margin-right: 16px;
+            color: #aaa;
+            font-size: 12px;
+            text-transform: uppercase;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
     }
 }
 .header__link {
@@ -63,40 +67,11 @@
             content: none;
         }
     }
-    // .face-book::after {
-    //     content: " ";
-    //     display: inline-block;
-    //     width: 2px;
-    //     height: 10px;
-    //     background-color: #adadad;
-    //     margin-left: 5px;
-    // }
-    // .twitter::after {
-    //     content: " ";
-    //     display: inline-block;
-    //     width: 2px;
-    //     height: 10px;
-    //     background-color: #adadad;
-    //     margin-left: 5px;
-    // }
-    
-    // a {
-    //     margin-right: 10px;
-    // }
-    // a:last-of-type {
-    //     margin-right: 0;
-    // }
-    .face-book svg {
-        width: 11px;
+    svg {
         height: 10px;
-    }
-    .twitter svg {
-        width: 11px;
-        height: 9px;
-    }
-    .behance svg {
-        width: 16px;
-        height: 10px;
+        &:hover{
+            opacity: 0.6;
+        }
     }
 }
 
@@ -202,14 +177,14 @@
 }
 
 .swiper-button-prev {
-    top: 26vmax;
+    // top: 26vmax;
     left: 14vw;
     svg {
         margin-right: 2px;
     }
 }
 .swiper-button-next {
-    top: 26vmax;
+    // top: 26vmax;
     right: 14vw;
     svg {
         margin-left: 2px;
@@ -218,7 +193,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    top: 50vh;
+    // top: 50vh;
 }
 
 
@@ -234,6 +209,7 @@
         flex-direction: column;
         align-items: center;
         background-color: #fff;
+        padding-bottom: 64px;
         h2 {
         color: #3e3d3d;
         font-family: "Amsdam-regular";
@@ -277,14 +253,13 @@ margin-bottom: 74px;
     font-size: 13px;
     letter-spacing: 1.47px;
     font-family: "Montserrat-regular";
-    margin-bottom: 64px;
     a {
         margin-right: 2px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: #ffffff;
+        background-color: #fff;
         color: #3e3d3d;
         border: 2px solid #3e3d3d;
         width: 135px;
@@ -309,10 +284,14 @@ margin-bottom: 74px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex: 0 1 19%;
+        flex: 0 1 25%;
         padding: 0 20px;
         color: #3e3d3d;
+        border-right: 2px solid #b0b0b0;
         font-family: "Montserrat-regular";
+        &:last-child {
+            border-right:none;
+        }
         img {
             margin-bottom: 21px;
         }
@@ -328,14 +307,14 @@ margin-bottom: 74px;
             font-size: 45px;
             
         }
-        &::after {
-            content: " ";
-            position: absolute;
-            width: 1px;
-            height: 168px;
-            background-color: #b0b0b0;
-            right: -21%;
-        }
+        // &::after {
+        //     content: " ";
+        //     position: absolute;
+        //     width: 1px;
+        //     height: 168px;
+        //     background-color: #b0b0b0;
+        //     right: 0;
+        // }
         &:last-child::after {
             content: none;
         }
@@ -354,8 +333,6 @@ margin-bottom: 74px;
     font-size: 14px;
     padding-top: 70px;
     padding-bottom: 84px;
-    // width: 100%;
-    // height: 100%;
 }
 .wrapper {
 }
@@ -376,20 +353,16 @@ margin-bottom: 74px;
         &::after {
             content: url(../img/index/servis/icon-services/line-services.png);
             background-repeat: no-repeat;
-            // background-position:26px 30px;
             top: 28px;
             left: 50%;
             transform: translateX(-50%);
             display: inline-block;
             position: absolute;
-
-
         }
     }
     p {
         font-family: "CrimsonText-roman";
         color: #cfcfcf;
-        font-family: "Crimson Text - Roman";
         font-size: 14px;
         letter-spacing: 1.4px;
         line-height: 2;
