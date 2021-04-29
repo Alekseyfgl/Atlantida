@@ -1001,29 +1001,30 @@ body {
   padding: 0 15px;
 }
 
-.header__body {
+.header-body {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 0px;
 }
 
-.header__logo {
+.header-logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
-.header__logo h1 {
+.header-logo h1 {
   font-family: "Montserrat-bold";
   color: #757575;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.8px;
+  margin: 0;
 }
-.header__logo img {
+.header-logo img {
   margin-right: 12px;
 }
 
-.header__burger {
+.header-burger {
   position: absolute;
 }
 
@@ -1040,13 +1041,13 @@ nav ul li a:hover {
   opacity: 0.6;
 }
 
-.sotial-seties {
+.social-networks {
   display: flex;
 }
-.sotial-seties a svg {
+.social-networks a svg {
   fill: #a4a4a4;
 }
-.sotial-seties a::before {
+.social-networks a::before {
   content: " ";
   display: inline-block;
   width: 2px;
@@ -1054,13 +1055,13 @@ nav ul li a:hover {
   background-color: #adadad;
   margin-left: 5px;
 }
-.sotial-seties a:first-child::before {
+.social-networks a:first-child::before {
   content: none;
 }
-.sotial-seties svg {
+.social-networks svg {
   height: 10px;
 }
-.sotial-seties svg:hover {
+.social-networks svg:hover {
   opacity: 0.6;
 }
 
@@ -1199,7 +1200,6 @@ nav ul li a:hover {
 }
 
 .about-as-border-image {
-  max-width: 1170px;
   max-height: 325px;
   margin-bottom: 58px;
 }
@@ -1238,14 +1238,14 @@ nav ul li a:hover {
   color: #cecece;
 }
 
-.icon-wrap {
+.about-row {
   display: flex;
   justify-content: space-between;
   padding-top: 39px;
   padding-left: 60px;
   padding-right: 60px;
 }
-.icon-wrap .column {
+.about-row .about-items {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1256,13 +1256,14 @@ nav ul li a:hover {
   border-right: 2px solid #b0b0b0;
   font-family: "Montserrat-regular";
 }
-.icon-wrap .column:last-child {
+.about-row .about-items:last-child {
   border-right: none;
 }
-.icon-wrap .column img {
+.about-row .about-items img {
   margin-bottom: 21px;
+  width: 40px;
 }
-.icon-wrap .column h3 {
+.about-row .about-items h3 {
   margin-bottom: 28px;
   font-size: 13px;
   text-transform: uppercase;
@@ -1270,10 +1271,10 @@ nav ul li a:hover {
   white-space: pre-line;
   text-align: center;
 }
-.icon-wrap .column p {
+.about-row .about-items p {
   font-size: 45px;
 }
-.icon-wrap .column:last-child::after {
+.about-row .about-items:last-child::after {
   content: none;
 }
 

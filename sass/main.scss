@@ -10,27 +10,28 @@
     margin: 0 auto;
     padding: 0 15px;
 }
-.header__body {
+.header-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 12px 0px;
 }
-.header__logo {
+.header-logo {
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     h1 {
         font-family: "Montserrat-bold";
         color: #757575;
         font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 1.8px;
+        margin: 0;
     }
     img {
         margin-right: 12px;
     }
 }
-.header__burger {
+.header-burger {
     position: absolute;
 }
 nav{
@@ -49,7 +50,7 @@ nav{
 }
 .header__link {
 }
-.sotial-seties {
+.social-networks {
     display: flex;
     a {
         svg {
@@ -232,7 +233,6 @@ nav{
 .wrapper {
 }
 .about-as-border-image {
-    max-width: 1170px;
     max-height: 325px;
     margin-bottom: 58px;
     picture, img {
@@ -272,14 +272,14 @@ margin-bottom: 74px;
     }
    
 }
-.icon-wrap {
+.about-row {
     display: flex;
     justify-content: space-between;
     padding-top: 39px;
 
     padding-left: 60px;
     padding-right: 60px;
-    .column {
+    .about-items {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -294,6 +294,7 @@ margin-bottom: 74px;
         }
         img {
             margin-bottom: 21px;
+            width: 40px;
         }
         h3 {
             margin-bottom: 28px;
