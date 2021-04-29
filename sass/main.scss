@@ -19,7 +19,7 @@
 .header-logo {
     display: flex;
     align-items: flex-end;
-    h1 {
+    p {
         font-family: "Montserrat-bold";
         color: #757575;
         font-size: 18px;
@@ -100,15 +100,21 @@ nav {
     align-items: center;
     justify-content: center;
     color: #fff;
-    flex-grow: 1;
     .text-slider {
         text-align: center;
         position: absolute;
+        h1 {
+            font-family: "CrimsonText-roman";
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            margin-top: 0;
+            margin-bottom: 56px;
+        }
         p {
             font-family: "CrimsonText-roman";
             font-size: 14px;
             letter-spacing: 1.4px;
-            margin-bottom: 56px;
+            margin-bottom: 56px; 
         }
         h2 {
             font-family: "Amsdam-regular";
@@ -164,7 +170,7 @@ nav {
     height: 34px;
     border-radius: 50%;
     fill: #fff;
-    // top: 50vh;
+    transform: translateY(100%);
     svg {
         height: 11px;
         fill: #a2ada9;
@@ -172,24 +178,18 @@ nav {
 }
 
 .swiper-button-prev {
-    // top: 26vmax;
-    left: 14vw;
+left: 14%;
     svg {
         margin-right: 2px;
     }
 }
 .swiper-button-next {
-    // top: 26vmax;
-    right: 14vw;
+    right: 14%;
     svg {
         margin-left: 2px;
     }
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    // top: 50vh;
-}
 
 // =============================================
 
