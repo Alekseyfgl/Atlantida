@@ -18,7 +18,7 @@
 }
 .header-logo {
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     h1 {
         font-family: "Montserrat-bold";
         color: #757575;
@@ -34,7 +34,7 @@
 .header-burger {
     position: absolute;
 }
-nav{
+nav {
     ul {
         display: flex;
         li a {
@@ -57,12 +57,12 @@ nav{
             fill: #a4a4a4;
         }
         &::before {
-         content: " ";
-         display: inline-block;
-         width: 2px;
-         height: 10px;
-         background-color: #adadad;
-         margin-left: 5px;
+            content: " ";
+            display: inline-block;
+            width: 2px;
+            height: 10px;
+            background-color: #adadad;
+            margin-left: 5px;
         }
         &:first-child::before {
             content: none;
@@ -70,7 +70,7 @@ nav{
     }
     svg {
         height: 10px;
-        &:hover{
+        &:hover {
             opacity: 0.6;
         }
     }
@@ -80,15 +80,11 @@ nav{
 // Slider
 
 .wrapper-slider {
-    // height: 100vh;
-    overflow-x: hidden;
 }
 .swiper-container {
-    // width: 100%;
-    // max-width: 100%;
-    // width: 100vw;
-    picture, img {
-        // width: 100vmax;
+    height: 100vh;
+    picture,
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -98,8 +94,6 @@ nav{
 .swiper-wrapper {
 }
 .swiper-slide {
-    // height: 100%;
-    // overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -141,8 +135,8 @@ nav{
             letter-spacing: 1.5px;
             position: relative;
             &:hover {
-            box-shadow: #fff;
-            opacity: 0.6;
+                box-shadow: #fff;
+                opacity: 0.6;
             }
             &::after {
                 content: url("../img/icon/Arrow.png");
@@ -197,9 +191,44 @@ nav{
     // top: 50vh;
 }
 
+// =============================================
+
+// ------------------------------------------
+// tittle
+.section-title {
+    font-family: "Amsdam-regular";
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.44px;
+    position: relative;
+    margin-bottom: 68px;
+    color: #3e3d3d;
+    &::after {
+        content: url(../img/index/about-as/icon/line-about.png);
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+    }
+}
+// Sub-title p
+.section-sub-title {
+    font-family: "CrimsonText-roman";
+    color: #3e3d3d;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 2;
+    text-align: center;
+}
+
+.sub-wrapper-services {
+    padding-left: 72px;
+    padding-right: 72px;
+}
+// ---------------------------------------
 
 
-// ==============================================
+
 // Obout as
 .about-as {
     background-color: #e3e3e3;
@@ -212,21 +241,16 @@ nav{
         background-color: #fff;
         padding-bottom: 64px;
         h2 {
-        color: #3e3d3d;
-        font-family: "Amsdam-regular";
-        font-size: 20px;
-        text-transform: uppercase;
-        letter-spacing: 0.44px;
         }
         p {
-        color: #3e3d3d;
-        font-family: "CrimsonText-roman";
-        font-size: 14px;
-        letter-spacing: 1.4px;
-        line-height: 1.9;
-        margin-bottom: 44px;
-        padding-left: 70px;
-        padding-right: 70px;
+            color: #3e3d3d;
+            font-family: "CrimsonText-roman";
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            line-height: 1.9;
+            margin-bottom: 44px;
+            padding-left: 70px;
+            padding-right: 70px;
         }
     }
 }
@@ -235,20 +259,15 @@ nav{
 .about-as-border-image {
     max-height: 325px;
     margin-bottom: 58px;
-    picture, img {
+    picture,
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
     }
 }
-
-.started {
-margin-bottom: 74px;
-}
-
-
-.about-as-button  {
+.about-as-button {
     display: flex;
     font-size: 13px;
     letter-spacing: 1.47px;
@@ -270,7 +289,6 @@ margin-bottom: 74px;
             color: #cecece;
         }
     }
-   
 }
 .about-row {
     display: flex;
@@ -285,37 +303,33 @@ margin-bottom: 74px;
         flex-direction: column;
         align-items: center;
         flex: 0 1 25%;
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 62px;
+        padding-bottom: 10px;
+
         color: #3e3d3d;
         border-right: 2px solid #b0b0b0;
         font-family: "Montserrat-regular";
         &:last-child {
-            border-right:none;
+            border-right: none;
         }
         img {
-            margin-bottom: 21px;
-            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
         }
         h3 {
             margin-bottom: 28px;
             font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 1.47px;
-            white-space: pre-line;
+            width: 40%;
             text-align: center;
         }
         p {
             font-size: 45px;
-            
         }
-        // &::after {
-        //     content: " ";
-        //     position: absolute;
-        //     width: 1px;
-        //     height: 168px;
-        //     background-color: #b0b0b0;
-        //     right: 0;
-        // }
         &:last-child::after {
             content: none;
         }
@@ -329,7 +343,7 @@ margin-bottom: 74px;
     background: url(../img/index/servis/Background-servis@3x.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     color: #fff;
     font-size: 14px;
     padding-top: 70px;
@@ -341,99 +355,79 @@ margin-bottom: 74px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 72px;
-    padding-right: 72px;
     margin-bottom: 70px;
     h2 {
-        font-family: "Amsdam-regular";
-        font-size: 20px;
-        text-transform: uppercase;
-        letter-spacing: 0.44px;
-        margin-bottom: 72px;
-        position: relative;
+        color: #fff;
         &::after {
             content: url(../img/index/servis/icon-services/line-services.png);
-            background-repeat: no-repeat;
-            top: 28px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: inline-block;
-            position: absolute;
         }
     }
     p {
-        font-family: "CrimsonText-roman";
         color: #cfcfcf;
-        font-size: 14px;
-        letter-spacing: 1.4px;
-        line-height: 2;
-        text-align: center;
     }
 }
 .container-services {
     display: flex;
     color: #d8d8d8;
     justify-content: space-between;
-        .colum-services {
-            position: relative;
+    .items-services {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 1 24%;
+        padding-top: 56px;
+        padding-left: 34px;
+        padding-right: 34px;
+        padding-bottom: 44px;
+
+        border-left: 2px solid #898989;
+        border-right: 2px solid #898989;
+        border-bottom: 2px solid #898989;
+        &::after {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: " ";
+            display: inline-block;
+            width: 40%;
+            height: 2px;
+            background-color: #898989;
+        }
+        &::before {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            content: " ";
+            display: inline-block;
+            width: 40%;
+            height: 2px;
+            background-color: #898989;
+        }
+        svg {
+            position: absolute;
+            top: -12px;
+            fill: #fff;
+            width: 26px;
+        }
+        h3 {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            flex: 0 1 24%;
-            padding-left: 34px;
-            padding-right: 34px;
-            padding-bottom: 44px;
-
-            border-left: 2px solid #898989;
-            border-right: 2px solid #898989;
-            border-bottom: 2px solid #898989;
-            &::after {
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                content: " ";
-                display: inline-block;
-                width: 40%;
-                height: 2px;
-                background-color: #898989;
-            }
-            &::before {
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                content: " ";
-                display: inline-block;
-                width: 40%;
-                height: 2px;
-                background-color: #898989;
-            }
-                svg {
-                    position: absolute;
-                    top: -12px;
-                    fill: #fff;
-                    width: 26px;
-
-                }
-                h3 {
-                    display: flex;
-                    flex-direction: column;
-                    font-family: "Montserrat-regular";
-                    font-size: 13px;
-                    text-transform: uppercase;
-                    letter-spacing: 1.47px;
-                    padding-top: 56px;
-                    margin-bottom: 28px;
-                    white-space:pre-line;
-                    text-align: center;
-                    line-height: 1.5;
-                }
-                p {
-                    font-family: "CrimsonText-roman";
-                    font-size: 14px;
-                    letter-spacing: 1.4px;
-                    line-height: 1.6;
-                    text-align: center;
-                }
-                
+            font-family: "Montserrat-regular";
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.47px;
+            margin-bottom: 28px;
+            width: 55%;
+            text-align: center;
+            line-height: 1.5;
         }
+        p {
+            font-family: "CrimsonText-roman";
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            line-height: 1.6;
+            text-align: center;
+        }
+    }
 }
