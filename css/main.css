@@ -1455,7 +1455,8 @@ nav ul li a:hover {
   padding: 0 144px;
 }
 .container-team .items-team {
-  flex: 0 1 auto;
+  margin-right: 20px;
+  flex: 1 1 270;
   position: relative;
   overflow: hidden;
 }
@@ -1469,6 +1470,17 @@ nav ul li a:hover {
   right: 0;
   transition: 0.6s;
   background-color: transparent;
+}
+.container-team .items-team .wrapper-img-team {
+  width: 272px;
+  height: 338px;
+}
+.container-team .items-team .wrapper-img-team picture,
+.container-team .items-team .wrapper-img-team img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .container-team .items-team .focus-team {
   position: absolute;
@@ -1498,11 +1510,13 @@ nav ul li a:hover {
 .container-team .items-team .focus-team ul {
   display: flex;
 }
-.container-team .items-team .focus-team ul li, .container-team .items-team .focus-team ul a {
+.container-team .items-team .focus-team ul li,
+.container-team .items-team .focus-team ul a {
   display: inline-block;
   padding: 0 4px;
 }
-.container-team .items-team .focus-team ul li::after, .container-team .items-team .focus-team ul a::after {
+.container-team .items-team .focus-team ul li::after,
+.container-team .items-team .focus-team ul a::after {
   content: "";
   display: inline-block;
   position: relative;
@@ -1511,10 +1525,12 @@ nav ul li a:hover {
   background-color: #3e3d3d;
   margin-left: 6px;
 }
-.container-team .items-team .focus-team ul li:last-of-type::after, .container-team .items-team .focus-team ul a:last-of-type::after {
+.container-team .items-team .focus-team ul li:last-of-type::after,
+.container-team .items-team .focus-team ul a:last-of-type::after {
   content: none;
 }
-.container-team .items-team .focus-team ul li svg, .container-team .items-team .focus-team ul a svg {
+.container-team .items-team .focus-team ul li svg,
+.container-team .items-team .focus-team ul a svg {
   height: 12px;
   fill: #3e3d3d;
 }

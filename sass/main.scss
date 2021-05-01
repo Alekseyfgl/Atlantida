@@ -114,7 +114,7 @@ nav {
             font-family: "CrimsonText-roman";
             font-size: 14px;
             letter-spacing: 1.4px;
-            margin-bottom: 56px; 
+            margin-bottom: 56px;
         }
         h2 {
             font-family: "Amsdam-regular";
@@ -178,7 +178,7 @@ nav {
 }
 
 .swiper-button-prev {
-left: 14%;
+    left: 14%;
     svg {
         margin-right: 2px;
     }
@@ -189,7 +189,6 @@ left: 14%;
         margin-left: 2px;
     }
 }
-
 
 // =============================================
 
@@ -443,7 +442,7 @@ left: 14%;
     .portfolio-buttom {
         display: flex;
         justify-content: center;
-        a{
+        a {
             margin-right: 5px;
             padding: 10px 22px;
             border: 2px solid #3e3d3d;
@@ -457,7 +456,6 @@ left: 14%;
             &:hover {
                 color: #fff;
                 background-color: #3e3d3d;
-                
             }
         }
     }
@@ -465,178 +463,119 @@ left: 14%;
 // ===============
 // Our-teame
 
-    .our-team {
-        padding-top: 70px;
-        padding-bottom: 70px;
-        background: url(../img/index/team/bg-teame.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        .section-sub-title {
-            padding-left: 72px;
-            padding-right: 72px;
-            margin-bottom: 54px;
-        }
+.our-team {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: url(../img/index/team/bg-teame.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    .section-sub-title {
+        padding-left: 72px;
+        padding-right: 72px;
+        margin-bottom: 54px;
     }
+}
 .container-team {
     display: flex;
     justify-content: space-between;
     position: relative;
     padding: 0 144px;
-    
-        .items-team {
-            flex: 0 1 auto;
-            position: relative;
-            overflow: hidden;
-            &::before {
-                content: " ";
-                position: absolute;
-                display: block;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                transition: 0.6s;
-                background-color: transparent;
-            }
-            .focus-team {
 
-                position: absolute;
-                padding: 0 30px;
-                bottom: -60%;
-                h3 {
-                    font-size: 13px;
-                    letter-spacing: 1.47px;
-                }
-                p {
-                    font-family: "CrimsonText-italic";
-                    font-size: 14px;
-                    position: relative;
-                    margin-bottom: 28px;
-                    &::after {
-                        content: " ";
-                        position: absolute;
-                        bottom: -14px;
-                        left: 0;
-                        display: inline-block;
-                        width: 146px;
-                        height: 2px;
-                        background-color: #515151;
-                    }
-                }
-                ul {
-                    display: flex;
-                    li, a {
-                        display: inline-block;
-                        padding: 0 4px;
-                        &::after {
-                            content: "";
-                            display: inline-block;
-                            position: relative;
-                            height: 12px;
-                            width: 1px;
-                            background-color: #3e3d3d;
-                            margin-left: 6px;
-                        }
-                        &:last-of-type::after {
-                            content: none;
-                        }
-                        svg {
-                            height: 12px;
-                            fill: #3e3d3d;
-                        }
-                            
-                        
-                        
-                        
-                    }
-                }
-                
+    .items-team {
+        margin-right: 20px;
+        flex: 1 1 270;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: " ";
+            position: absolute;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: 0.6s;
+            background-color: transparent;
+        }
+        .wrapper-img-team {
+            width: 272px;
+            height: 338px;
+            picture,
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
             }
-            &:hover {
-                .focus-team {
-                    bottom: 70px;
-                    transition: 0.6s;
-                    a:hover {
-                        transform: scale(1.5);
-                      }
+        }
+
+        .focus-team {
+            position: absolute;
+            padding: 0 30px;
+            bottom: -60%;
+            h3 {
+                font-size: 13px;
+                letter-spacing: 1.47px;
+            }
+            p {
+                font-family: "CrimsonText-italic";
+                font-size: 14px;
+                position: relative;
+                margin-bottom: 28px;
+                &::after {
+                    content: " ";
+                    position: absolute;
+                    bottom: -14px;
+                    left: 0;
+                    display: inline-block;
+                    width: 146px;
+                    height: 2px;
+                    background-color: #515151;
                 }
-                &::before {
-                    left: 10px;
-                    right: 10px;
-                    top: 10px;
-                    bottom: 10px;
-                    background-color: #f6f6f6;
-                    opacity: 0.82;
-                    transition: 0.6s;
+            }
+            ul {
+                display: flex;
+                li,
+                a {
+                    display: inline-block;
+                    padding: 0 4px;
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        position: relative;
+                        height: 12px;
+                        width: 1px;
+                        background-color: #3e3d3d;
+                        margin-left: 6px;
+                    }
+                    &:last-of-type::after {
+                        content: none;
+                    }
+                    svg {
+                        height: 12px;
+                        fill: #3e3d3d;
+                    }
                 }
             }
         }
-        // .about-header {
-        //     position: relative;
-        //     // overflow: hidden;
- 
-        //     &::before {
-        //         content: "";
-        //         display: block;
-        //         position: absolute;
-        //         left: 0;
-        //         right: 0;
-        //         top: 0;
-        //         bottom: 0;
-        //         transition: 0.6s;
-        //         background-color: transparent;
-        //     }
-        //     ul, p {
-        //         position: absolute;
-        //         display: flex;
-        //         align-items: center;
-        //         justify-content: center;
-                
-        
-        //         left: 0;
-        //         bottom: -20%;
-        //         // transform: translateX(-50%);
-            
-        //         transition: 0.6s;
-        //         li {
-        //             &::before {
-        //                 content: " ";
-        //                 display: inline-block;
-        //                 width: 3px;
-        //                 height: 30px;
-        //                 background-color: #6b2222;
-        //                 margin-left: 5px;
-        //             }
-        //             &:first-child::before {
-        //                 content: none;
-        //             }
-        //             svg {
-        //                 height: 10px;
-        //                 fill: #3e3d3d;
-        //             }
-        //         }
-        //     }
-            
-        
-        //     &:hover {
-        //         ul, p {
-        //             bottom: 50px;
-        //         }
-        //         &::before {
-        //             background-color: #000;
-        //             opacity: 0.6;
-        //         }
-        //     }
-        // }
-}
-
-
-
-
-.wrapper {
-}
-.sub-wrapper-teame {
-}
-.section-title {
+        &:hover {
+            .focus-team {
+                bottom: 70px;
+                transition: 0.6s;
+                a:hover {
+                    transform: scale(1.5);
+                }
+            }
+            &::before {
+                left: 10px;
+                right: 10px;
+                top: 10px;
+                bottom: 10px;
+                background-color: #f6f6f6;
+                opacity: 0.82;
+                transition: 0.6s;
+            }
+        }
+    }
 }
