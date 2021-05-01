@@ -468,7 +468,7 @@ left: 14%;
     .our-team {
         padding-top: 70px;
         padding-bottom: 70px;
-        background: url(../img/index/teame/bg-teame.jpg);
+        background: url(../img/index/team/bg-teame.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0 0;
@@ -485,6 +485,7 @@ left: 14%;
     padding: 0 144px;
     
         .items-team {
+            flex: 0 1 auto;
             position: relative;
             overflow: hidden;
             &::before {
@@ -499,9 +500,10 @@ left: 14%;
                 background-color: transparent;
             }
             .focus-team {
+
                 position: absolute;
                 padding: 0 30px;
-                bottom: -100px;
+                bottom: -60%;
                 h3 {
                     font-size: 13px;
                     letter-spacing: 1.47px;
@@ -514,8 +516,8 @@ left: 14%;
                     &::after {
                         content: " ";
                         position: absolute;
-                        top: 26px;
-                        left: 0px;
+                        bottom: -14px;
+                        left: 0;
                         display: inline-block;
                         width: 146px;
                         height: 2px;
@@ -524,13 +526,13 @@ left: 14%;
                 }
                 ul {
                     display: flex;
-                    li {
+                    li, a {
                         display: inline-block;
                         padding: 0 4px;
                         &::after {
                             content: "";
                             display: inline-block;
-                            // position: relative;
+                            position: relative;
                             height: 12px;
                             width: 1px;
                             background-color: #3e3d3d;
@@ -543,6 +545,10 @@ left: 14%;
                             height: 12px;
                             fill: #3e3d3d;
                         }
+                            
+                        
+                        
+                        
                     }
                 }
                 
@@ -551,7 +557,7 @@ left: 14%;
                 .focus-team {
                     bottom: 70px;
                     transition: 0.6s;
-                    li:hover {
+                    a:hover {
                         transform: scale(1.5);
                       }
                 }
