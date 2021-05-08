@@ -1870,4 +1870,124 @@ nav ul li a:hover {
   color: #2d2d2f;
 }
 
+.blog {
+  background-color: #e3e3e3;
+}
+
+.wr-blog {
+  padding-top: 80px;
+  padding-bottom: 78px;
+}
+
+.container-blog {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-blog .sub-container {
+  display: flex;
+  flex: 1 1 50%;
+}
+.container-blog .sub-container:nth-child(3), .container-blog .sub-container:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+.container-img {
+  flex: 0 1 50%;
+  transition: 0.6s;
+  overflow: hidden;
+}
+.container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s;
+}
+.container-img img:hover {
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+.text-blog {
+  position: relative;
+  flex: 0 1 50%;
+  background-color: #2d2d2f;
+  padding: 46px 34px;
+}
+.text-blog::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 150px;
+  background-color: #454545;
+  top: 72px;
+}
+.text-blog h4 {
+  color: #e3e3e3;
+  font-family: "CrimsonText-italic";
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.text-blog a {
+  display: inline-block;
+  color: #e3e3e3;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+  margin-bottom: 36px;
+}
+.text-blog a:hover {
+  opacity: 0.6;
+}
+.text-blog a::before {
+  content: " ";
+  display: inline-block;
+  border-style: solid;
+  border-width: 3.5px 0 3.5px 4px;
+  border-color: transparent transparent transparent #e3e3e3;
+  position: relative;
+  padding-right: 6px;
+}
+.text-blog p {
+  font-family: "CrimsonText-roman";
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: #949494;
+  width: 80%;
+  line-height: 1.4;
+}
+
+.clients {
+  padding-top: 78px;
+  padding-bottom: 124px;
+}
+.clients .sub-wrapper-clients {
+  margin-bottom: 74px;
+}
+.clients ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 194px;
+  padding-right: 194px;
+}
+.clients ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  margin-right: 5px;
+  transition: 0.6s;
+}
+.clients ul li:last-child {
+  margin-right: 0;
+}
+.clients ul li:hover {
+  transform: scale(1.2);
+}
+.clients ul li a img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

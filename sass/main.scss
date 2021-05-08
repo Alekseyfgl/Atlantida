@@ -1165,3 +1165,127 @@ nav {
         }
     }
 }
+// =======================
+// Blog
+.blog {
+    background-color: #e3e3e3;
+}
+.wr-blog {
+    padding-top: 80px;
+    padding-bottom: 78px;
+}
+
+.container-blog {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    .sub-container {
+        display: flex;
+        flex: 1 1 50%;
+        &:nth-child(3),
+        &:nth-child(4) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+.container-img {
+    flex: 0 1 50%;
+    transition: 0.6s;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.6s;
+        &:hover {
+            transform: scale(1.05);
+            z-index: 5;
+        }
+    }
+}
+.text-blog {
+    position: relative;
+    flex: 0 1 50%;
+    background-color: #2d2d2f;
+    padding: 46px 34px;
+    &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 150px;
+        background-color: #454545;
+        top: 72px;
+    }
+    h4 {
+        color: #e3e3e3;
+        font-family: "CrimsonText-italic";
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    a {
+        display: inline-block;
+        color: #e3e3e3;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1.47px;
+        margin-bottom: 36px;
+        &:hover {
+            opacity: 0.6;
+        }
+        &::before {
+            content: " ";
+            display: inline-block;
+            border-style: solid;
+            border-width: 3.5px 0 3.5px 4px;
+            border-color: transparent transparent transparent #e3e3e3;
+            position: relative;
+            padding-right: 6px;
+        }
+    }
+    p {
+        font-family: "CrimsonText-roman";
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        color: #949494;
+        width: 80%;
+        line-height: 1.4;
+    }
+}
+
+// ==============================
+// Clients
+.clients {
+    padding-top: 78px;
+    padding-bottom: 124px;
+    .sub-wrapper-clients {
+        margin-bottom: 74px;
+    }
+    ul {
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            margin-right: 5px;
+            transition: 0.6s;
+            &:last-child {
+                margin-right:0 ;
+            }
+            &:hover {
+                transform: scale(1.2);
+            }
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        display: flex;
+        justify-content: space-around;
+        padding-left: 194px;
+        padding-right: 194px;
+
+    }
+}
