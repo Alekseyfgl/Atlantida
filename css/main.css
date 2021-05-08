@@ -1835,10 +1835,26 @@ nav ul li a:hover {
 .looking .wrapper img {
   width: 110px;
   height: 104px;
-  margin-right: 40px;
+  transition: 5s;
+  animation-name: kompas;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.looking .wrapper img:hover {
+  transform: rotate(360deg);
+}
+@keyframes kompas {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .looking .wrapper .text {
   transform: translateY(10px);
+  padding-left: 40px;
 }
 .looking .wrapper .text h3 {
   color: #d8d8d8;
