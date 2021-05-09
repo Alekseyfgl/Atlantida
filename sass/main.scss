@@ -1340,6 +1340,7 @@ nav {
     flex: 1 1 40%;
     > a {
         display: flex;
+        width: 40%;
         .container-img-form {
             width: 42px;
             height: 30px;
@@ -1390,6 +1391,9 @@ nav {
             font-size: 13px;
             letter-spacing: 1.47px;
             margin-bottom: 7px;
+            &:hover {
+                opacity: 0.6;
+            }
         }
         
     }

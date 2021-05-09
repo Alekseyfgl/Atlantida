@@ -2033,6 +2033,7 @@ nav ul li a:hover {
 }
 .col-40 > a {
   display: flex;
+  width: 40%;
   margin-bottom: 40px;
 }
 .col-40 > a .container-img-form {
@@ -2083,6 +2084,9 @@ nav ul li a:hover {
   font-size: 13px;
   letter-spacing: 1.47px;
   margin-bottom: 7px;
+}
+.col-40 .contacts a:hover {
+  opacity: 0.6;
 }
 .col-40 .social-form {
   margin-bottom: 100px;
