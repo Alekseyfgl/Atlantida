@@ -1609,6 +1609,11 @@ nav ul li a:hover {
   background-color: #3e3d3d;
 }
 
+.container-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  height: 688px;
+}
 .our-team {
   padding-top: 70px;
   padding-bottom: 70px;
