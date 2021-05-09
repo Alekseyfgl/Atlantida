@@ -121,14 +121,14 @@ new Swiper('.swiper-container', {
 
 
     // Автопрокрутка
-    // autoplay: {
-    //     // Пауза между прокруткой
-    //     delay: 3000,
-    //     // Закончить на последнем слайде
-    //     stopOnLastSlide: false,
-    //     // Отключить после ручного переключения
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        // Пауза между прокруткой
+        delay: 3000,
+        // Закончить на последнем слайде
+        stopOnLastSlide: false,
+        // Отключить после ручного переключения
+        disableOnInteraction: false
+    },
 
     // Скорость прокрутки 
     speed: 2000,
@@ -148,12 +148,12 @@ new Swiper('.swiper-container', {
 
 
     // Смена прозрачности
-    // effect: 'fade',
-    //     // Дополнения к fade
-    //     fadeEffect: {
-    //         // Параллельная смена прозрачности
-    //         crossFade: true
-    //     },
+    effect: 'fade',
+        // Дополнения к fade
+        fadeEffect: {
+            // Параллельная смена прозрачности
+            crossFade: true
+        },
 
     // Переворот
     // effect: 'flip',
@@ -202,3 +202,7 @@ new Swiper('.swiper-container', {
     //     }
     // }
 });
+// ===================================
+
+
+
