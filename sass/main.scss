@@ -1335,20 +1335,27 @@ nav {
     color: #efefef;
     p {
         text-align: center;
-        width: 48%;
+        width: 52%;
         font-size: 20px;
         font-family: "CrimsonText-italic";
-        line-height: 1.5;
         margin-bottom: 64px;
         position: relative;
-        &::before {
-            content:" “ ";
+        &::before,&::after {
             display: inline-block;
             font-family: "CrimsonText-italic";
             font-size: 93px;
-            position: absolute;
-            top: -28px;
-            left: -20px;
+            position: relative;
+            line-height: 0;
+        }
+        &::before {
+            content:"“";
+            top: 36px;
+            left: -4px;
+        }
+        &::after {
+            content:"”";
+            top: 57px;
+            right: 12px;
         }
     }
     h2 {
@@ -1376,9 +1383,6 @@ nav {
             height: 100%;
             width: 100%;
             object-fit: cover;
-    
-            // padding-bottom: 10%;
-
         }
     }
 }
@@ -1386,8 +1390,14 @@ nav {
     width: 12px;
     height: 12px;
     background-color: #c5c5c5;
+    margin-bottom: 68px;
 }
-
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 55px;
+    left: 0;
+    width: 100%;
+    font-size: 0;
+}
 
 
 
