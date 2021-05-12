@@ -7,30 +7,17 @@ ymaps.ready(function () {
         }),
 
         // Создаём макет содержимого.
+        // что это????
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
 
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-            
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: '#',
-            // Своё изображение иконки метки.
-            iconImageHref: '#',
-            // Размеры метки.
-            // iconImageSize: [30, 42],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            // iconImageOffset: [-5, -38]
-        }),
-
         myPlacemarkWithContent = new ymaps.Placemark([54.000812, 27.580929], {
-            hintContent: 'Лучше здесь не работать:)',
-            balloonContent: 'Папернянский сельсовет, 19',
+             // баллун
+            balloonContentHeader:'<img class="map-pic" src="./img/icon/icon-logo.png"> <span class="map-red">Штаб Atlantida </span>',
+            balloonContentBody: 'Текст балуна ',
+            balloonContentFooter: 'место не очень:)',
+            hintContent: ' лучше здесь не работать)',
             // iconContent: '12'
         }, {
             // Опции.
@@ -51,8 +38,6 @@ ymaps.ready(function () {
 
         // Отключение скролла мышкой
         myMap.behaviors.disable(['scrollZoom']);
-
     myMap.geoObjects
-        .add(myPlacemark)
         .add(myPlacemarkWithContent);
 });

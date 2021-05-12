@@ -2089,9 +2089,19 @@ nav ul li a:hover {
   font-size: 0;
 }
 
-#map {
-  width: 100%;
+.map {
   height: 515px;
+}
+
+.map-pic {
+  width: 42px;
+  height: 30px;
+}
+
+.map-red {
+  vertical-align: bottom;
+  color: red;
+  font-size: 14px;
 }
 
 .form {

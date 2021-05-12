@@ -1406,10 +1406,22 @@ nav {
 
 // Maps
 // ================
-#map {
-    width: 100%;
+.map {
+    // width: 100%;
     height: 515px;
 }
+.map-pic {
+width: 42px;
+height: 30px;
+}
+.map-red {
+vertical-align: bottom;
+color: red;
+font-size: 14px;
+}
+
+
+
 // ====================
 // form
 .form {
