@@ -1,5 +1,5 @@
 ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
+    let myMap = new ymaps.Map('map', {
             center: [53.902295, 27.561783],
             zoom: 9
         }, {
@@ -14,10 +14,10 @@ ymaps.ready(function () {
 
         myPlacemarkWithContent = new ymaps.Placemark([54.000812, 27.580929], {
              // баллун
-            balloonContentHeader:'<img class="map-pic" src="./img/icon/icon-logo.png"> <span class="map-red">Штаб Atlantida </span>',
-            balloonContentBody: 'Текст балуна ',
+            balloonContentHeader:'<img class="map-pic" src="./img/icon/icon-logo.png"> <span class="map-red"> Atlantida </span>',
+            balloonContentBody: 'Южная улица, 11',
             balloonContentFooter: 'место не очень:)',
-            hintContent: ' лучше здесь не работать)',
+            // hintContent: ' лучше здесь не работать)',
             // iconContent: '12'
         }, {
             // Опции.
@@ -38,6 +38,6 @@ ymaps.ready(function () {
 
         // Отключение скролла мышкой
         myMap.behaviors.disable(['scrollZoom']);
-    myMap.geoObjects
-        .add(myPlacemarkWithContent);
+        // 
+        myMap.geoObjects.add(myPlacemarkWithContent);
 });
