@@ -1033,38 +1033,56 @@ body {
 nav ul {
   display: flex;
 }
-nav ul li a {
+nav li {
   margin-right: 16px;
+}
+nav a {
   color: #aaa;
   font-size: 12px;
   text-transform: uppercase;
 }
-nav ul li a:hover {
+nav a:hover {
   opacity: 0.6;
+}
+nav a:focus {
+  color: #000;
+  text-decoration: underline;
 }
 
-.social-networks {
+.social-networks ul {
   display: flex;
 }
-.social-networks a svg {
-  fill: #a4a4a4;
+.social-networks ul li {
+  height: 11px;
+  margin-right: 6px;
 }
-.social-networks a::before {
-  content: " ";
+.social-networks ul li:last-child {
+  margin-right: 0;
+}
+.social-networks ul li::after {
+  content: "";
   display: inline-block;
-  width: 2px;
+  background-color: #a4a4a4;
+  width: 1px;
   height: 10px;
-  background-color: #adadad;
-  margin-left: 5px;
+  margin-left: 3px;
 }
-.social-networks a:first-child::before {
-  content: none;
+.social-networks ul li:last-child::after {
+  display: none;
+}
+.social-networks a {
+  display: inline-block;
+  height: 11px;
+}
+.social-networks a:focus svg {
+  fill: #2d2d2f;
 }
 .social-networks svg {
-  height: 10px;
+  fill: #a4a4a4;
+  height: 11px;
 }
 .social-networks svg:hover {
-  opacity: 0.6;
+  transform: scale(1.2);
 }
 
 .swiper-container {
@@ -1129,8 +1147,12 @@ nav ul li a:hover {
   position: relative;
 }
 .swiper-slide .text-slider a:hover {
-  box-shadow: #fff;
-  opacity: 0.6;
+  -webkit-box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.94);
+  -moz-box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.94);
+  box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.94);
+}
+.swiper-slide .text-slider a:focus {
+  text-decoration: underline;
 }
 .swiper-slide .text-slider a::after {
   content: url("../img/icon/Arrow.png");
@@ -1198,16 +1220,11 @@ nav ul li a:hover {
 
 .section-sub-title {
   font-family: "CrimsonText-roman";
-  color: #3e3d3d;
   font-size: 14px;
   letter-spacing: 1.4px;
   line-height: 2;
+  width: 92%;
   text-align: center;
-}
-
-.sub-wrapper-services {
-  padding-left: 72px;
-  padding-right: 72px;
 }
 
 .about-as {
@@ -1252,7 +1269,8 @@ nav ul li a:hover {
   font-family: "Montserrat-regular";
 }
 .about-as-button a {
-  margin-right: 2px;
+  margin-right: 1px;
+  margin-left: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1262,11 +1280,13 @@ nav ul li a:hover {
   border: 2px solid #3e3d3d;
   width: 135px;
   height: 40px;
-  border: 2px solid #3e3d3d;
 }
 .about-as-button a:hover {
   background-color: #3e3d3d;
   color: #cecece;
+}
+.about-as-button a:focus {
+  opacity: 0.6;
 }
 
 .about-row {
@@ -1284,7 +1304,6 @@ nav ul li a:hover {
   flex: 0 1 25%;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 62px;
   padding-bottom: 10px;
   color: #3e3d3d;
   border-right: 2px solid #b0b0b0;
@@ -1295,11 +1314,10 @@ nav ul li a:hover {
 }
 .about-row .about-items img {
   height: 40px;
-  position: absolute;
-  top: 0;
+  margin-bottom: 20px;
 }
 .about-row .about-items h3 {
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1.47px;
@@ -1412,6 +1430,9 @@ nav ul li a:hover {
 }
 
 .sub-wrapper-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -1447,7 +1468,6 @@ nav ul li a:hover {
   font-size: 13px;
   letter-spacing: 1.47px;
   z-index: 1;
-  margin-top: 40px;
   margin-bottom: 40px;
   background-color: #ededed;
 }
@@ -1624,9 +1644,13 @@ nav ul li a:hover {
   background-position: 0 0;
 }
 .our-team .section-sub-title {
-  padding-left: 72px;
-  padding-right: 72px;
   margin-bottom: 54px;
+}
+
+.sub-wrapper-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-team {
@@ -1636,7 +1660,7 @@ nav ul li a:hover {
   padding: 0 144px;
 }
 .container-team .items-team {
-  margin-right: 20px;
+  flex: 0 1 31%;
   position: relative;
   overflow: hidden;
 }
@@ -1652,7 +1676,6 @@ nav ul li a:hover {
   background-color: transparent;
 }
 .container-team .items-team .wrapper-img-team {
-  max-width: 272px;
   height: 100%;
 }
 .container-team .items-team .wrapper-img-team picture,
@@ -1715,11 +1738,14 @@ nav ul li a:hover {
   fill: #3e3d3d;
 }
 .container-team .items-team:hover .focus-team {
-  bottom: 70px;
+  bottom: 50px;
   transition: 0.6s;
 }
-.container-team .items-team:hover .focus-team a:hover {
+.container-team .items-team:hover .focus-team a:hover svg {
   transform: scale(1.5);
+}
+.container-team .items-team:hover .focus-team a:focus {
+  opacity: 0.6;
 }
 .container-team .items-team:hover::before {
   left: 10px;
@@ -1738,11 +1764,13 @@ nav ul li a:hover {
 }
 .prices .sub-wrapper-prices {
   margin-bottom: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .prices .container-prices {
   display: flex;
   justify-content: space-between;
-  flex: 1 1 25%;
 }
 .prices .container-prices .items-prices {
   position: relative;
@@ -1827,6 +1855,9 @@ nav ul li a:hover {
   color: #fff;
   background-color: #3e3d3d;
 }
+.prices .container-prices .items-prices a:focus {
+  opacity: 0.6;
+}
 
 .looking {
   background-color: #2d2d2f;
@@ -1838,9 +1869,15 @@ nav ul li a:hover {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.looking .wrapper .wr-img-looking {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
 .looking .wrapper img {
-  width: 110px;
-  height: 104px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: 5s;
   animation-name: kompas;
   animation-duration: 5s;
@@ -1849,14 +1886,6 @@ nav ul li a:hover {
 }
 .looking .wrapper img:hover {
   transform: rotate(360deg);
-}
-@keyframes kompas {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .looking .wrapper .text {
   transform: translateY(10px);
@@ -1891,19 +1920,23 @@ nav ul li a:hover {
   background-color: #fff;
   color: #2d2d2f;
 }
+.looking .wrapper a:focus {
+  opacity: 0.6;
+}
 
 .blog {
+  padding-top: 80px;
   background-color: #e3e3e3;
 }
 
 .wr-blog {
-  padding-top: 80px;
-  padding-bottom: 78px;
+  margin-bottom: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-blog {
-  width: 100%;
-  height: 50%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1920,15 +1953,22 @@ nav ul li a:hover {
   transition: 0.6s;
   overflow: hidden;
 }
+.container-img:focus {
+  opacity: 0.6;
+}
 .container-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.6s;
+  position: relative;
 }
 .container-img img:hover {
   transform: scale(1.05);
   z-index: 5;
+}
+.container-img img:focus {
+  opacity: 0.6;
 }
 
 .text-blog {
@@ -1963,6 +2003,12 @@ nav ul li a:hover {
 .text-blog a:hover {
   opacity: 0.6;
 }
+.text-blog a:focus {
+  text-decoration: underline;
+}
+.text-blog a:focus::before {
+  transform: scale(1.6);
+}
 .text-blog a::before {
   content: " ";
   display: inline-block;
@@ -1985,16 +2031,21 @@ nav ul li a:hover {
   padding-top: 78px;
   padding-bottom: 124px;
 }
-.clients .sub-wrapper-clients {
+
+.sub-wrapper-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 74px;
 }
-.clients ul {
+
+.clients-logo ul {
   display: flex;
   justify-content: space-around;
   padding-left: 194px;
   padding-right: 194px;
 }
-.clients ul li {
+.clients-logo ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2002,13 +2053,16 @@ nav ul li a:hover {
   margin-right: 5px;
   transition: 0.6s;
 }
-.clients ul li:last-child {
+.clients-logo ul li:last-child {
   margin-right: 0;
 }
-.clients ul li:hover {
+.clients-logo ul li:hover {
   transform: scale(1.2);
 }
-.clients ul li a img {
+.clients-logo ul li a:focus {
+  opacity: 0.6;
+}
+.clients-logo ul li a img {
   width: 100%;
 }
 
@@ -2068,6 +2122,10 @@ nav ul li a:hover {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 54px;
+  transition: 0.6s;
+}
+.swiper-slide-client .container-img-slider:hover {
+  transform: scale(1.2);
 }
 .swiper-slide-client .container-img-slider img {
   height: 100%;
@@ -2242,6 +2300,9 @@ nav ul li a:hover {
 }
 .col-60 [type=submit]:hover {
   box-shadow: 0 0 0 2px #464646 inset, 0 0 0 4px white inset;
+}
+.col-60 [type=submit]:focus {
+  opacity: 0.4;
 }
 .col-60 [autocomplete] {
   background-color: transparent !important;
