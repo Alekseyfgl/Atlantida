@@ -2145,7 +2145,9 @@ nav a:focus {
   margin-bottom: 68px;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: 55px;
   left: 0;
   width: 100%;
@@ -2177,31 +2179,22 @@ nav a:focus {
   background-repeat: repeat;
 }
 
-.wr-form {
+.logo-form {
   display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.col-40 {
-  flex: 1 1 40%;
-}
-.col-40 > a {
-  display: flex;
-  width: 40%;
+  max-width: 178px;
   margin-bottom: 40px;
 }
-.col-40 > a .container-img-form {
+.logo-form .container-img-form {
   width: 42px;
   height: 30px;
   margin-right: 12px;
 }
-.col-40 > a .container-img-form img {
+.logo-form .container-img-form img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.col-40 > a p {
+.logo-form p {
   color: #fff;
   font-family: "Montserrat-regular";
   font-size: 18px;
@@ -2209,6 +2202,17 @@ nav a:focus {
   letter-spacing: 1.8px;
   padding-top: 8px;
   margin-bottom: 0;
+}
+
+.container-form {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.col-40 {
+  flex: 1 1 40%;
+  margin-right: 36px;
 }
 .col-40 p {
   color: #949494;
@@ -2246,9 +2250,8 @@ nav a:focus {
 .col-40 .social-form {
   margin-bottom: 100px;
 }
+
 .col-60 {
-  padding-top: 78px;
-  padding-left: 30px;
   flex: 1 1 60%;
 }
 .col-60 [placeholder] {

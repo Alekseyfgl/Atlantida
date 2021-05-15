@@ -37,10 +37,9 @@
 nav {
     ul {
         display: flex;
-        
     }
     li {
-        margin-right: 16px; 
+        margin-right: 16px;
     }
     a {
         color: #aaa;
@@ -62,20 +61,20 @@ nav {
         display: flex;
         li {
             height: 11px;
-        margin-right: 6px;
-        &:last-child {
-            margin-right: 0;
-        }
-        &::after {
-            content: "";
-            display: inline-block;
-            background-color: #a4a4a4;
-            width: 1px;
-            height: 10px;
-            margin-left: 3px;
-        }
-        &:last-child::after {
-            display: none;
+            margin-right: 6px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &::after {
+                content: "";
+                display: inline-block;
+                background-color: #a4a4a4;
+                width: 1px;
+                height: 10px;
+                margin-left: 3px;
+            }
+            &:last-child::after {
+                display: none;
             }
         }
     }
@@ -94,7 +93,6 @@ nav {
         &:hover {
             transform: scale(1.2);
         }
-        
     }
 }
 
@@ -164,8 +162,8 @@ nav {
             position: relative;
             &:hover {
                 -webkit-box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.94);
-                -moz-box-shadow:    inset 0px 0px 30px 0px rgba(255, 255, 255, 0.94);
-                box-shadow:         inset 0px 0px 30px 0px rgba(255, 255, 255, 0.94);
+                -moz-box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.94);
+                box-shadow: inset 0px 0px 30px 0px rgba(255, 255, 255, 0.94);
             }
             &:focus {
                 text-decoration: underline;
@@ -246,7 +244,6 @@ nav {
     width: 92%;
     text-align: center;
 }
-
 
 // ---------------------------------------
 
@@ -468,7 +465,6 @@ nav {
     margin-bottom: 30px;
 }
 .container-history {
-    
     position: relative;
     &::after {
         position: absolute;
@@ -928,8 +924,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     height: 688px;
-    .container-img-potfolio   {
-    
+    .container-img-potfolio {
     }
 }
 // ===============
@@ -956,8 +951,6 @@ nav {
     justify-content: space-between;
     position: relative;
     padding: 0 144px;
-
-    
 }
 .items-team {
     flex: 0 1 31%;
@@ -1030,7 +1023,6 @@ nav {
                 height: 12px;
                 fill: #3e3d3d;
             }
-
         }
     }
     &:hover {
@@ -1189,7 +1181,7 @@ nav {
         animation-name: kompas;
         animation-duration: 5s;
         animation-timing-function: linear;
-        animation-iteration-count:infinite;
+        animation-iteration-count: infinite;
         &:hover {
             transform: rotate(360deg);
         }
@@ -1265,7 +1257,7 @@ nav {
         flex: 0 1 50%;
         transition: 0.6s;
         overflow: hidden;
-       
+
         &:focus {
             opacity: 0.6;
         }
@@ -1316,9 +1308,9 @@ nav {
             }
             &:focus {
                 text-decoration: underline;
-               &::before {
-                   transform: scale(1.6);
-               }
+                &::before {
+                    transform: scale(1.6);
+                }
             }
             &::before {
                 content: " ";
@@ -1341,28 +1333,24 @@ nav {
     }
 }
 
-
-
 // ==============================
 // Clients
 .clients {
     padding-top: 78px;
     padding-bottom: 124px;
-    
 }
 .sub-wrapper-clients {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 74px;
-    
 }
 .clients-logo {
     ul {
         display: flex;
         justify-content: space-around;
         padding-left: 194px;
-        padding-right: 194px;    
+        padding-right: 194px;
     }
     li {
         display: flex;
@@ -1373,13 +1361,11 @@ nav {
         padding-right: 5px;
         padding-left: 5px;
         &:last-child {
-            margin-right:0 ;
+            margin-right: 0;
         }
         &:hover {
             transform: scale(1.2);
         }
-        
-        
     }
     a {
         &:focus {
@@ -1415,7 +1401,8 @@ nav {
         font-family: "CrimsonText-italic";
         margin-bottom: 64px;
         position: relative;
-        &::before,&::after {
+        &::before,
+        &::after {
             display: inline-block;
             font-family: "CrimsonText-italic";
             font-size: 93px;
@@ -1423,29 +1410,26 @@ nav {
             line-height: 0;
         }
         &::before {
-            content:"“";
+            content: "“";
             top: 36px;
             left: -4px;
         }
         &::after {
-            content:"”";
+            content: "”";
             top: 57px;
             right: 12px;
         }
     }
     h2 {
-    font-family: "Montserrat-regular";
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1.47px;
-    margin-bottom: 18px;
-    
-    
+        font-family: "Montserrat-regular";
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1.47px;
+        margin-bottom: 18px;
     }
     h3 {
         font-family: "CrimsonText-italic";
         font-size: 14px;
-       
     }
     .container-img-slider {
         height: 106px;
@@ -1461,7 +1445,6 @@ nav {
             height: 100%;
             width: 100%;
             object-fit: cover;
-           
         }
     }
 }
@@ -1471,18 +1454,14 @@ nav {
     background-color: #c5c5c5;
     margin-bottom: 68px;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     bottom: 55px;
     left: 0;
     width: 100%;
     font-size: 0;
-    
 }
-
-
-
-
-
 
 // Maps
 // ================
@@ -1491,19 +1470,17 @@ nav {
     height: 515px;
 }
 .map-pic {
-width: 42px;
-height: 30px;
+    width: 42px;
+    height: 30px;
 }
 .map-red {
-vertical-align: bottom;
-font-family: "Montserrat-bold";
-color: #757575;
-font-size: 18px;
-text-transform: uppercase;
-letter-spacing: 1.8px;
+    vertical-align: bottom;
+    font-family: "Montserrat-bold";
+    color: #757575;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
 }
-
-
 
 // ====================
 // form
@@ -1512,45 +1489,40 @@ letter-spacing: 1.8px;
     padding-bottom: 38px;
     background-image: url(../img/index/form/Background-s.jpg);
     background-repeat: repeat;
-    
 }
-.wr-form {
+.logo-form {
+    display: flex;
+    max-width: 178px;
+    margin-bottom: 40px;
+    .container-img-form {
+        width: 42px;
+        height: 30px;
+        margin-right: 12px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    p {
+        color: #fff;
+        font-family: "Montserrat-regular";
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        padding-top: 8px;
+        margin-bottom: 0;
+    }
+}
+.container-form {
     display: flex;
     justify-content: space-between;
     position: relative;
-    
 }
-
-
-
 
 .col-40 {
     flex: 1 1 40%;
-    > a {
-        display: flex;
-        width: 40%;
-        .container-img-form {
-            width: 42px;
-            height: 30px;
-            margin-right: 12px;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-            p {
-                color: #fff;
-                font-family: "Montserrat-regular";
-                font-size: 18px;
-                text-transform: uppercase;
-                letter-spacing: 1.8px;
-                padding-top: 8px;
-                margin-bottom: 0;
-            }
-        margin-bottom: 40px;
-    }
-
+    margin-right: 36px;
     p {
         color: #949494;
         font-family: "CrimsonText-roman";
@@ -1583,23 +1555,15 @@ letter-spacing: 1.8px;
                 opacity: 0.6;
             }
         }
-        
     }
     .social-form {
         margin-bottom: 100px;
     }
-    .copy {
-    
-        // position: relative;
-            
-        }
 }
 
 .col-60 {
-    padding-top: 78px;
-    padding-left: 30px;
     flex: 1 1 60%;
-    
+
     [placeholder] {
         color: #949494;
         font-family: "CrimsonText-italic";
@@ -1613,7 +1577,6 @@ letter-spacing: 1.8px;
         color: #e3e3e3;
         padding-left: 24px;
         padding-right: 24px;
-        // margin-right: 28px;
     }
     .textarea {
         border: 2px solid #464646;
@@ -1632,8 +1595,8 @@ letter-spacing: 1.8px;
             width: 49%;
         }
     }
-    
-    [type=submit] {
+
+    [type="submit"] {
         background-color: #464646;
         color: #e3e3e3;
         padding: 16px 40px;
@@ -1647,37 +1610,35 @@ letter-spacing: 1.8px;
             opacity: 0.4;
         }
     }
-      [autocomplete] {
+    [autocomplete] {
         background-color: transparent !important;
-          color: #e3e3e3;
+        color: #e3e3e3;
     }
 }
 
-
 footer {
-        background-image: url(../img/index/footer/Background-s.jpg);
-        padding-top: 40px;
-        padding-bottom: 36px;
-        .wrapper {
+    background-image: url(../img/index/footer/Background-s.jpg);
+    padding-top: 40px;
+    padding-bottom: 36px;
+    .wrapper {
+        position: relative;
+        &::before {
+            content: " ";
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: #3e3e3e;
             position: relative;
-            &::before {
-                content: " ";
-                display: inline-block;
-                width: 100%;
-                height: 1px;
-                background-color: #3e3e3e;
-                position: relative;
-                bottom: 110px;
-                top: 0;
-                left: 0;
-                margin-bottom: 40px;
-                }
+            bottom: 110px;
+            top: 0;
+            left: 0;
+            margin-bottom: 40px;
         }
+    }
     p {
         color: #949494;
         font-size: 14px;
         letter-spacing: 1.4px;
         font-family: "CrimsonText-italic";
     }
-    
 }
