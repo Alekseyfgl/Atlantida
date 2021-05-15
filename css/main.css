@@ -1602,20 +1602,22 @@ nav a:focus {
 
 .portfolio {
   padding-top: 74px;
-  padding-bottom: 62px;
 }
 .portfolio .sub-wrapper-portfolio {
-  padding-left: 72px;
-  padding-right: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
 }
 
 .portfolio-buttom {
   display: flex;
   justify-content: center;
+  margin-bottom: 62px;
 }
 .portfolio-buttom a {
-  margin-right: 5px;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
   padding: 10px 22px;
   border: 2px solid #3e3d3d;
   color: #3e3d3d;
@@ -1632,10 +1634,57 @@ nav a:focus {
 }
 
 .container-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  height: 688px;
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(100px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr);
+  grid-template-rows: repeat(10, 73px);
 }
+.container-portfolio .wr-img-30 {
+  width: 100%;
+  grid-row: span 3;
+}
+.container-portfolio .wr-img-40 {
+  width: 100%;
+  grid-row: span 4;
+}
+.container-portfolio .wr-img-60 {
+  width: 100%;
+  grid-row: span 6;
+}
+.container-portfolio .wr-img-70 {
+  width: 100%;
+  grid-row: span 7;
+}
+
+.container-portfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-portfolio .img-1 {
+  order: 1;
+}
+.container-portfolio .img-2 {
+  order: 2;
+}
+.container-portfolio .img-3 {
+  order: 3;
+}
+.container-portfolio .img-4 {
+  order: 4;
+}
+.container-portfolio .img-5 {
+  order: 7;
+}
+.container-portfolio .img-6 {
+  order: 6;
+}
+.container-portfolio .img-7 {
+  order: 5;
+}
+.container-portfolio .img-8 {
+  order: 8;
+}
+
 .our-team {
   padding-top: 70px;
   padding-bottom: 70px;
