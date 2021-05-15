@@ -16,7 +16,7 @@ ymaps.ready(function () {
              // баллун
             balloonContentHeader:'<img class="map-pic" src="./img/icon/icon-logo.png"> <span class="map-red"> Atlantida </span>',
             balloonContentBody: 'Южная улица, 11',
-            balloonContentFooter: 'место не очень:)',
+            // balloonContentFooter: 'место не очень:)',
             // hintContent: ' лучше здесь не работать)',
             // iconContent: '12'
         }, {

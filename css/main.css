@@ -1075,7 +1075,7 @@ nav a:focus {
   height: 11px;
 }
 .social-networks a:focus svg {
-  fill: #2d2d2f;
+  fill: #4d4d4d;
 }
 .social-networks svg {
   fill: #a4a4a4;
@@ -2027,7 +2027,6 @@ nav a:focus {
   font-size: 14px;
   letter-spacing: 1.4px;
   color: #949494;
-  width: 80%;
   line-height: 1.4;
 }
 
