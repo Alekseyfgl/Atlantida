@@ -1635,7 +1635,7 @@ nav a:focus {
 
 .container-portfolio {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(100px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr);
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
   grid-template-rows: repeat(10, 73px);
 }
 .container-portfolio .wr-img-30 {
