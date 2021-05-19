@@ -1008,7 +1008,7 @@ body {
   position: absolute;
   width: 100%;
   z-index: 10;
-  background-color: #e4cece;
+  background-color: #fff;
 }
 
 .header-body {
@@ -1193,6 +1193,16 @@ nav a:focus {
 .swiper-button-next svg {
   height: 11px;
   fill: #a2ada9;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px white;
+  -moz-box-shadow: 0px 0px 30px 0px white;
+  box-shadow: 0px 0px 30px 0px white;
+}
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  opacity: 0.6;
 }
 
 .swiper-button-prev {
@@ -2472,7 +2482,7 @@ footer p {
     display: none;
   }
 }
-@media (max-width: 882px) {
+@media (max-width: 900px) {
   .services .items-services {
     flex: 0 1 49%;
     margin-bottom: 36px;

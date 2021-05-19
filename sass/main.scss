@@ -15,7 +15,7 @@
 position: absolute;
 width: 100%;
 z-index: 10;
-background-color: #e4cece;
+background-color: #fff;
 }
 .header-body {
     display: flex;
@@ -206,6 +206,14 @@ nav {
     svg {
         height: 11px;
         fill: #a2ada9;
+    }
+    &:hover {
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 1);
+-moz-box-shadow:    0px 0px 30px 0px rgba(255, 255, 255, 1);
+box-shadow:         0px 0px 30px 0px rgba(255, 255, 255, 1);
+    }
+    &:focus {
+        opacity: 0.6;
     }
 }
 
@@ -967,6 +975,7 @@ img {
         display: inline-block;
         padding: 10px 40px;
         border: 2px solid #3e3d3d;
+        // color: #3e3d3d;
         &:hover {
             color: #fff;
             background-color: #3e3d3d;
@@ -1585,7 +1594,7 @@ footer {
 }
 
 // Media 882px
-@media (max-width:882px) {
+@media (max-width:900px) {
     .services {
         .items-services {
             flex: 0 1 49%;
