@@ -2538,11 +2538,6 @@ footer p {
     overflow: hidden;
   }
 
-  .mobile {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   header .header-logo {
     z-index: 10;
   }
@@ -2607,7 +2602,7 @@ footer p {
     background-color: #fff;
     transition: all 0.3s ease 0s;
     overflow: auto;
-    opacity: 0.9;
+    opacity: 0.92;
   }
   header .social-networks {
     display: none;
@@ -2646,9 +2641,6 @@ footer p {
   .services .items-services {
     flex: 0 1 49%;
     margin-bottom: 36px;
-  }
-  .services .items-services:last-child {
-    margin-bottom: 0;
   }
 
   .blog .sub-container {
@@ -2774,6 +2766,11 @@ footer p {
 
   footer {
     text-align: center;
+  }
+
+  .mobile {
+    padding-top: 70px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 620px) {

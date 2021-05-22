@@ -1667,10 +1667,6 @@ footer {
     body.lock {
         overflow: hidden;
     }
-    .mobile {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
     // header
     header {
         .header-logo {
@@ -1741,7 +1737,7 @@ footer {
             background-color: #fff;
             transition: all 0.3s ease 0s;
             overflow: auto;
-            opacity: 0.95;
+            opacity: 0.92;
             ul {
             }
         }
@@ -1798,9 +1794,9 @@ footer {
         .items-services {
             flex: 0 1 49%;
             margin-bottom: 36px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+            // &:last-child {
+            //     margin-bottom: 0;
+            // }
         }
     }
     // ====================================
@@ -1969,6 +1965,11 @@ footer {
     text-align: center;
 }
 // ============================================
+
+.mobile {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
 }
 
 
