@@ -40,9 +40,10 @@ let mySwiper = new Swiper(slider, {
 
     // Включение/отключение
     // Перетаскивание на ПК
-    simulateTouch: true,
+    simulateTouch: false,
     // Чувствительность слайда (0-выкл, чтобы увеличить 1 и более)
-    touchRatio: 1,
+    // знач 0 отключ перетаск слайдов на всех устройствах, 1 - включ на всех устройств, можно и выше ставить
+    touchRatio: 0,
     // Угол срабатывания свайпа/перетаскивания
     touchAngle: 45,
     // Курсор перетаскивания
@@ -124,17 +125,17 @@ let mySwiper = new Swiper(slider, {
 
 
     // Автопрокрутка
-    // autoplay: {
-    //     // Пауза между прокруткой
-    //     delay: 3000,
-    //     // Закончить на последнем слайде
-    //     stopOnLastSlide: false,
-    //     // Отключить после ручного переключения
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        // Пауза между прокруткой
+        delay: 3000,
+        // Закончить на последнем слайде
+        stopOnLastSlide: false,
+        // Отключить после ручного переключения
+        disableOnInteraction: false
+    },
 
     // Скорость прокрутки 
-    speed: 2000,
+    speed: 1600,
 
     // Вертикальный слайдер
     // direction: 'vertical',
@@ -364,14 +365,14 @@ let mySwiper1 = new Swiper(slider1, {
 
 
     // Автопрокрутка
-    // autoplay: {
-    //     // Пауза между прокруткой
-    //     delay: 3000,
-    //     // Закончить на последнем слайде
-    //     stopOnLastSlide: false,
-    //     // Отключить после ручного переключения
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        // Пауза между прокруткой
+        delay: 3000,
+        // Закончить на последнем слайде
+        stopOnLastSlide: false,
+        // Отключить после ручного переключения
+        disableOnInteraction: false
+    },
 
     // Скорость прокрутки 
     speed: 2000,

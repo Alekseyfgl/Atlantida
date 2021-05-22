@@ -2154,11 +2154,14 @@ nav a:focus {
   align-items: center;
   width: 140px;
   transition: 0.6s;
-  padding-right: 5px;
-  padding-left: 5px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 .clients-logo li:last-child {
   margin-right: 0;
+}
+.clients-logo li:first-child {
+  margin-left: 0;
 }
 .clients-logo li:hover {
   transform: scale(1.2);
@@ -2872,6 +2875,10 @@ footer p {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
 
+  .prices .items-prices {
+    width: 100%;
+  }
+
   .blog .sub-container {
     flex-wrap: wrap;
   }
@@ -2884,6 +2891,11 @@ footer p {
 
   .clients-logo ul {
     flex-wrap: wrap;
+  }
+  .clients-logo li {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .container-form .col-60 [type=submit] {

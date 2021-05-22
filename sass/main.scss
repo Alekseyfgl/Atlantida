@@ -1246,10 +1246,15 @@ nav {
         align-items: center;
         width: 140px;
         transition: 0.6s;
-        padding-right: 5px;
-        padding-left: 5px;
+        // padding-right: 5px;
+        // padding-left: 5px;
+        margin-right: 8px;
+        margin-left: 8px;
         &:last-child {
             margin-right: 0;
+        }
+        &:first-child {
+            margin-left: 0;
         }
         &:hover {
             transform: scale(1.2);
@@ -1967,7 +1972,7 @@ footer {
 }
 
 
-// Media 570
+// Media 620
 @media (max-width:620px) {
     // Slider
     // =============================
@@ -2103,6 +2108,15 @@ footer {
         }
     // ==============================
 
+// ==============================
+// Prices
+.prices {
+    .items-prices {
+        width: 100%;
+    }
+}
+// ================================
+
     // ================================
     // Blog
     .blog {
@@ -2123,6 +2137,11 @@ footer {
 .clients-logo {
     ul {
         flex-wrap: wrap;
+    }
+    li {
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
 // =========================================
