@@ -124,14 +124,14 @@ let mySwiper = new Swiper(slider, {
 
 
     // Автопрокрутка
-    autoplay: {
-        // Пауза между прокруткой
-        delay: 3000,
-        // Закончить на последнем слайде
-        stopOnLastSlide: false,
-        // Отключить после ручного переключения
-        disableOnInteraction: false
-    },
+    // autoplay: {
+    //     // Пауза между прокруткой
+    //     delay: 3000,
+    //     // Закончить на последнем слайде
+    //     stopOnLastSlide: false,
+    //     // Отключить после ручного переключения
+    //     disableOnInteraction: false
+    // },
 
     // Скорость прокрутки 
     speed: 2000,
@@ -198,12 +198,12 @@ let mySwiper = new Swiper(slider, {
     //     320: {
     //         slidesPerView: 1,
     //     },
-    //     480: {
-    //         slidesPerView: 2,
-    //     },
-    //     992: {
-    //         slidesPerView:3,
-    //     }
+    //     // 480: {
+    //     //     slidesPerView: 2,
+    //     // },
+    //     // 992: {
+    //     //     slidesPerView:3,
+    //     // }
     // }
 });
 // ===================================
@@ -364,14 +364,14 @@ let mySwiper1 = new Swiper(slider1, {
 
 
     // Автопрокрутка
-    autoplay: {
-        // Пауза между прокруткой
-        delay: 3000,
-        // Закончить на последнем слайде
-        stopOnLastSlide: false,
-        // Отключить после ручного переключения
-        disableOnInteraction: false
-    },
+    // autoplay: {
+    //     // Пауза между прокруткой
+    //     delay: 3000,
+    //     // Закончить на последнем слайде
+    //     stopOnLastSlide: false,
+    //     // Отключить после ручного переключения
+    //     disableOnInteraction: false
+    // },
 
     // Скорость прокрутки 
     speed: 2000,
@@ -447,5 +447,15 @@ let mySwiper1 = new Swiper(slider1, {
 });
 
 
+let burger = document.querySelector('.header-burger');
 
+burger.addEventListener('click', function(){
+    let menu = document.querySelector('.header');
+    let btn = document.querySelector('.header-burger');
+    let body = document.querySelector('body');
+
+    menu.classList.toggle('active');
+    btn.classList.toggle('active');
+    body.classList.toggle('lock');
+})
 
