@@ -1606,6 +1606,7 @@ nav a:focus {
 }
 
 .lamp {
+  margin-bottom: 0;
   width: 54px;
   height: 54px;
   border: 2px solid #3e3d3d;
@@ -1778,7 +1779,7 @@ nav a:focus {
   bottom: -14px;
   left: 0;
   display: inline-block;
-  width: 146px;
+  width: 140px;
   height: 2px;
   background-color: #515151;
 }
@@ -1788,6 +1789,9 @@ nav a:focus {
 .items-team .focus-team li {
   display: inline-block;
   margin-right: 6px;
+}
+.items-team .focus-team li:last-child {
+  margin-right: 0;
 }
 .items-team .focus-team li::after {
   content: "";
@@ -1808,6 +1812,7 @@ nav a:focus {
 .items-team:hover .focus-team {
   bottom: 50px;
   transition: 0.6s;
+  word-break: break-all;
 }
 .items-team:hover .focus-team a:hover svg {
   transform: scale(1.5);
@@ -2446,9 +2451,6 @@ footer p {
   }
 
   .history .colum-history {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     background-color: #ededed;
@@ -2512,7 +2514,7 @@ footer p {
   left: 0;
 }
 .active nav ul {
-  padding: 120px 60px 80px;
+  padding: 100px 60px 80px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -2657,7 +2659,8 @@ footer p {
   }
 
   .our-team .container-team {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .prices .container-prices {
@@ -2665,7 +2668,7 @@ footer p {
     align-items: center;
   }
   .prices .items-prices {
-    width: 100%;
+    width: 60%;
     margin-bottom: 20px;
   }
 
@@ -2693,7 +2696,6 @@ footer p {
     margin-bottom: 30px;
   }
   .wr-looking .text h3 {
-    width: 100%;
     text-align: center;
   }
   .wr-looking .text p {
@@ -2704,6 +2706,22 @@ footer p {
   .clients-logo ul {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .swiper-slide-client .container-img-slider {
+    margin-bottom: 30px;
+  }
+
+  .swiper-slide-client p {
+    margin-bottom: 40px;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 16px;
+  }
+
+  .map {
+    height: 300px;
   }
 
   .container-form {
@@ -2755,7 +2773,7 @@ footer p {
     text-align: center;
   }
 }
-@media (max-width: 570px) {
+@media (max-width: 620px) {
   .swiper-slide .text-slider {
     width: 60%;
   }
@@ -2794,7 +2812,6 @@ footer p {
 
   .services .items-services {
     flex: 0 1 100%;
-    margin-bottom: 36px;
   }
 
   .our-team .container-team {

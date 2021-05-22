@@ -677,7 +677,7 @@ nav {
 .name-year-2020 {
 }
 .lamp {
-    // margin-top: 40px;
+    margin-bottom: 0;
     width: 54px;
     height: 54px;
     border: 2px solid #3e3d3d;
@@ -854,7 +854,7 @@ nav {
                 bottom: -14px;
                 left: 0;
                 display: inline-block;
-                width: 146px;
+                width: 140px;
                 height: 2px;
                 background-color: #515151;
             }
@@ -865,6 +865,9 @@ nav {
         li {
             display: inline-block;
             margin-right: 6px;
+            &:last-child {
+                margin-right: 0;
+            }
             &::after {
                 content: "";
                 display: inline-block;
@@ -887,6 +890,7 @@ nav {
         .focus-team {
             bottom: 50px;
             transition: 0.6s;
+            word-break: break-all;
             a {
                 &:hover {
                     svg {
@@ -1556,9 +1560,9 @@ footer {
     // History
     .history {
         .colum-history {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
+            // position: relative;
+            // display: flex;
+            // flex-wrap: wrap;
             flex-direction: column;
             align-items: center;
             background-color: #ededed;
@@ -1630,7 +1634,7 @@ footer {
     nav {
         left: 0;
         ul {
-            padding: 120px 60px 80px;
+            padding: 100px 60px 80px;
             flex-direction: column;
             align-items: flex-start;
         }
@@ -1813,7 +1817,8 @@ footer {
 // Our Team
 .our-team {
     .container-team {
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 // =========================================
@@ -1826,7 +1831,7 @@ footer {
         align-items: center;
     }
     .items-prices {
-        width: 100%;
+        width: 60%;
         margin-bottom: 20px;
     }
 }
@@ -1857,7 +1862,6 @@ footer {
         justify-content: center;
         margin-bottom: 30px;
         h3 {
-            width: 100%;
             text-align: center;
         }
         p {
@@ -1878,6 +1882,31 @@ footer {
     }
 }
 // =========================================
+
+// ===========================================
+// slider-personal
+.swiper-slide-client {
+    .container-img-slider {
+        margin-bottom: 30px;
+    }
+}
+.swiper-slide-client  {
+    p {
+        margin-bottom: 40px;
+    }
+}
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+     bottom: 16px;
+   
+}
+// ===========================================
+
+// ===========================================
+// Maps
+.map {
+    height: 300px;
+}
+// ===========================================
 
 // =========================================
 // Forms 
@@ -1939,7 +1968,7 @@ footer {
 
 
 // Media 570
-@media (max-width:570px) {
+@media (max-width:620px) {
     // Slider
     // =============================
     .swiper-slide {
@@ -1992,7 +2021,6 @@ footer {
     .services {
         .items-services {
             flex: 0 1 100%;
-            margin-bottom: 36px;
         }
     }
     // ===============================
