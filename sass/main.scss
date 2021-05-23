@@ -1462,9 +1462,7 @@ nav {
 
 .col-60 {
     flex: 1 1 60%;
-
     [placeholder] {
-        color: #949494;
         font-family: "CrimsonText-italic";
         letter-spacing: 1.4px;
     }
@@ -1485,6 +1483,9 @@ nav {
         color: #e3e3e3;
         padding: 22px 24px;
         margin-bottom: 16px;
+        &:focus {
+            border: 2px solid #fff;
+        }
     }
     .col-30 {
         display: flex;
@@ -1492,6 +1493,9 @@ nav {
         margin-bottom: 20px;
         .text {
             width: 49%;
+            &:focus {
+                border: 2px solid #fff;
+            }
         }
     }
 

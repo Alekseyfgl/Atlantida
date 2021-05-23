@@ -989,6 +989,13 @@ h1, h2, h3, h4, h5, h5, h6 {
   font-weight: 400;
 }
 
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
 body {
   font-family: "Montserrat-regular";
   font-size: 15px;
@@ -2384,6 +2391,9 @@ nav a:focus {
   padding: 22px 24px;
   margin-bottom: 16px;
 }
+.col-60 .textarea:focus {
+  border: 2px solid #fff;
+}
 .col-60 .col-30 {
   display: flex;
   justify-content: space-between;
@@ -2391,6 +2401,9 @@ nav a:focus {
 }
 .col-60 .col-30 .text {
   width: 49%;
+}
+.col-60 .col-30 .text:focus {
+  border: 2px solid #fff;
 }
 .col-60 [type=submit] {
   background-color: #464646;
