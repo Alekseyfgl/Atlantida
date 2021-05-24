@@ -326,14 +326,15 @@ nav {
 .wrapper {
 }
 .about-as-border-image {
-    max-height: 325px;
+    height: 325px;
+    width: 100%;
     margin-bottom: 58px;
     picture,
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center;
+        object-position: center bottom;
     }
 }
 .about-as-button {
