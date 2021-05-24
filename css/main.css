@@ -1933,6 +1933,7 @@ nav a:focus {
   display: inline-block;
   padding: 10px 40px;
   border: 2px solid #3e3d3d;
+  color: #3e3d3d;
 }
 .items-prices a:hover {
   color: #fff;
@@ -2369,7 +2370,6 @@ nav a:focus {
   flex: 1 1 60%;
 }
 .col-60 [placeholder] {
-  color: #949494;
   font-family: "CrimsonText-italic";
   letter-spacing: 1.4px;
 }
