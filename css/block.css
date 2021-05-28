@@ -824,7 +824,14 @@ nav a:focus {
   margin-bottom: 32px;
 }
 
-.gallery {
+.gallery h2 {
+  font-family: "Montserrat-bold";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.81px;
+  margin-bottom: 36px;
+}
+.gallery .wrapper-gallery {
   display: flex;
   flex-wrap: wrap;
 }
@@ -871,12 +878,10 @@ nav a:focus {
   align-items: center;
   padding: 12px 15px 12px 10px;
 }
-.preview-box .details .icon {
-  cursor: pointer;
-}
 .preview-box .details .icon svg {
   height: 24px;
   fill: #000;
+  cursor: pointer;
 }
 .preview-box .details .title {
   display: flex;
@@ -956,9 +961,11 @@ nav a:focus {
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.3s ease;
+  z-index: 25;
 }
 
 .shadow {
+  z-index: 15;
   position: fixed;
   top: 0;
   left: 0;
@@ -1198,6 +1205,20 @@ footer p {
     display: none;
   }
 
+  .col-70 {
+    margin-right: 0;
+  }
+
+  .gallery .image {
+    width: calc(100% / 2);
+  }
+  .gallery .image span {
+    height: 180px;
+  }
+  .gallery span img {
+    object-position: center 25%;
+  }
+
   .container-form {
     flex-wrap: wrap;
   }
@@ -1259,10 +1280,6 @@ footer p {
   .col-30 {
     flex: 0 1 100%;
   }
-
-  .news {
-    margin-right: 0;
-  }
 }
 @media (max-width: 620px) {
   .title-img {
@@ -1293,6 +1310,11 @@ footer p {
   .content .sub-wrapper {
     padding-top: 36px;
     padding-bottom: 36px;
+  }
+
+  .gallery .image {
+    padding: 4px;
+    width: 100%;
   }
 
   .container-form .col-60 [type=submit] {
@@ -1345,21 +1367,6 @@ footer p {
   font-size: 30px;
   display: block;
   width: 100%;
-}
-
-@media (max-width: 1000px) {
-  .gallery .image {
-    width: calc(100% / 2);
-  }
-  .gallery .image span {
-    height: 180px;
-  }
-}
-@media (max-width: 600px) {
-  .gallery .image {
-    padding: 4px;
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=block.css.map */
