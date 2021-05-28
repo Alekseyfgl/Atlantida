@@ -1287,6 +1287,7 @@ footer p {
 @media (max-width: 1000px) and (orientation: landscape) {
   .wr-img-box {
     height: 70vh;
+    width: 100%;
   }
 
   .preview-box .img-box img {
