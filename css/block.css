@@ -1285,12 +1285,16 @@ footer p {
   }
 }
 @media (max-width: 1000px) and (orientation: landscape) {
+  .wr-img-box {
+    height: 70vh;
+  }
+
   .preview-box .img-box img {
-    height: 68vh;
+    object-position: center 15%;
   }
 
   .preview-box.show {
-    width: 90%;
+    width: 85%;
   }
 }
 @media (max-width: 620px) {
