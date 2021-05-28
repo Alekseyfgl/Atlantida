@@ -588,6 +588,7 @@ nav {
         padding: 12px 15px 12px 10px;
 
         .icon {
+            display: flex;
             svg {
                 height: 24px;
                 fill: #000;
@@ -1073,6 +1074,11 @@ footer {
     //     margin-right: 0;
     // }
 }
+@media (max-width:1000px) and (orientation:landscape) {
+    .preview-box .img-box img {
+        height: 84vh ;
+    }
+}
 // ==============================
 
 
@@ -1121,6 +1127,20 @@ footer {
     }
 } 
 
+.preview-box {
+    .img-box {
+        .slide {
+            top: 55%;
+            &.next {
+                right: 0px;
+            }
+            &.prev {
+                left: 0;
+            }
+        }
+    }
+}
+.preview-box .img-box .slide.next
     // Forms
     .container-form {
         .col-60 {
