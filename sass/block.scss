@@ -1076,7 +1076,10 @@ footer {
 }
 @media (max-width:1000px) and (orientation:landscape) {
     .preview-box .img-box img {
-        height: 84vh ;
+        height: 68vh;
+    }
+    .preview-box.show {
+        width: 90%;
     }
 }
 // ==============================
