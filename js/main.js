@@ -210,38 +210,6 @@ let mySwiper = new Swiper(slider, {
 // ===================================
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let mySwiper1 = new Swiper(slider1, {
     // Стрелки
     navigation: {
@@ -447,7 +415,21 @@ let mySwiper1 = new Swiper(slider1, {
     // }
 });
 
+// scroll for anchors
+const anchors = document.querySelectorAll('a[href^="#"]');
 
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href')
+        document.querySelector('' + blockID).scrollIntoView({
+           behavior: 'smooth',
+           block : 'start'
+        })
+    })
+}
+
+// burger
 let burger = document.querySelector('.header-burger');
 
 burger.addEventListener('click', function(){
@@ -466,6 +448,9 @@ let listArr = menuList.children;
 for (let i = 0; i < listArr.length; i++) {
     listArr[i].addEventListener('click', function () {
         let menu = document.querySelector('.header');
-        menu.classList.toggle('active');
+        menu.classList.remove('active');
     });
 }
+
+
+
