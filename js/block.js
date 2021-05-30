@@ -1,6 +1,7 @@
+// burger
 let burger = document.querySelector('.header-burger');
 
-burger.addEventListener('click', function () {
+burger.addEventListener('click', function(){
     let menu = document.querySelector('.header');
     let btn = document.querySelector('.header-burger');
     let body = document.querySelector('body');
@@ -9,6 +10,19 @@ burger.addEventListener('click', function () {
     btn.classList.toggle('active');
     body.classList.toggle('lock');
 })
+
+let menuList = document.querySelector('.menuList')
+let listArr = menuList.children
+
+for (let i = 0; i < listArr.length; i++) {
+    listArr[i].addEventListener('click', function () {
+        let menu = document.querySelector('.header');
+        let body = document.querySelector('body');
+        body.classList.remove('lock');
+        menu.classList.remove('active')
+    })
+}
+
 
 
 const gallery = document.querySelectorAll(".image"),

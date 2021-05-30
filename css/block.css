@@ -898,7 +898,6 @@ nav a:focus {
   font-weight: 800;
 }
 .preview-box .img-box {
-  display: flex;
   width: 100%;
 }
 .preview-box .img-box .slide {
@@ -1344,14 +1343,14 @@ footer p {
     left: 0;
   }
 
-  .preview-box .img-box .slide.next .container-form .col-60 [type=submit] {
+  .container-form .col-60 [type=submit] {
     width: 100%;
   }
-  .preview-box .img-box .slide.next .container-form .col-30 {
+  .container-form .col-30 {
     flex-wrap: wrap;
     margin-bottom: 0;
   }
-  .preview-box .img-box .slide.next .container-form .col-30 .text {
+  .container-form .col-30 .text {
     flex: 0 1 100%;
     margin-bottom: 20px;
   }

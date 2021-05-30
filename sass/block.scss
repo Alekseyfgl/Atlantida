@@ -559,9 +559,8 @@ nav {
     .image {
         padding: 7px;
         width: calc(100% / 3);
-        
-        
     }
+    
 }
 
 
@@ -612,8 +611,9 @@ nav {
             }
         }
     }
+    
     .img-box {
-        display: flex;
+        // display: flex;
         width: 100%;
         .slide {
             position: absolute;
@@ -1147,22 +1147,22 @@ footer {
         }
     }
 }
-.preview-box .img-box .slide.next
     // Forms
     .container-form {
         .col-60 {
-            [type="submit"] {
+            [type=submit] {
                 width: 100%;
             }
         }
-        .col-30 {
-            flex-wrap: wrap;
-            margin-bottom: 0;
-            .text {
-                flex: 0 1 100%;
-                margin-bottom: 20px;
+            .col-30 {
+                flex-wrap: wrap;
+                margin-bottom: 0;
+                .text {
+                    flex: 0 1 100%;
+                    margin-bottom: 20px;
+                }
             }
-        }
+        
     }
 }
 
