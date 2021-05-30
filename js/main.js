@@ -429,6 +429,8 @@ for (let anchor of anchors) {
     })
 }
 
+
+
 // burger
 let burger = document.querySelector('.header-burger');
 
@@ -440,17 +442,18 @@ burger.addEventListener('click', function(){
     menu.classList.toggle('active');
     btn.classList.toggle('active');
     body.classList.toggle('lock');
-});
+})
 
-let menuList = document.querySelector('.menuList');
-let listArr = menuList.children;
+let menuList = document.querySelector('.menuList')
+let listArr = menuList.children
 
 for (let i = 0; i < listArr.length; i++) {
     listArr[i].addEventListener('click', function () {
         let menu = document.querySelector('.header');
-        menu.classList.remove('active');
-    });
+        let body = document.querySelector('body');
+        body.classList.remove('lock');
+        menu.classList.remove('active')
+    })
 }
-
 
 
