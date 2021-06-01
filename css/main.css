@@ -2811,6 +2811,10 @@ footer p {
     box-shadow: none;
   }
 
+  .col-40 .contacts a:hover {
+    opacity: 1;
+  }
+
   .soc-net-form ul li {
     height: 60px;
     margin-right: 40px;
@@ -2834,6 +2838,10 @@ footer p {
   }
   .soc-net-form a:focus {
     border: 4px solid #fff;
+  }
+
+  .social-networks svg:hover {
+    transform: none;
   }
 }
 .swiper-slide-client .container-img-slider:hover {

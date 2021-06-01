@@ -977,36 +977,7 @@ footer {
             transition: all 0.3s ease 0s;
             overflow: auto;
             opacity: 0.92;
-            
-        }
-        a {
-            font-size: 24px;
-            // padding-top: 15px;
-            // padding-bottom: 15px;
-            display: block;
-            width: 100%;
-            position: relative;
-            &:hover{
-                opacity: 1;
-            }
-            &:active {
-                color: #000;
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    position: absolute;
-                    left: -24px;
-                    top: 3px;
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
-                    border-width: 10px 0 10px 20px;
-                    border-color: transparent transparent transparent #000;
-                }
-            }
-            &:focus {
-                color: #aaa;
-                text-decoration: none;
+            ul {
             }
         }
         .social-networks {
@@ -1014,26 +985,10 @@ footer {
         }
     }
     // ================================
-// title-img 
-.title-img {
-    .item-hover:hover {
-        opacity: 1;
-    }
-}
-// news
-.news__button {
-    &:hover {
-        color: #3e3d3d;
-        background-color: transparent;
-    }
-}
+
 // .col-70
 .col-70 {
     margin-right: 0;
-}
-// Post
-.post__container-img:hover {
-    box-shadow:none;
 }
 // Gallery
 .gallery {
@@ -1046,17 +1001,6 @@ footer {
     span {
         img {
             object-position: center 25%;
-            &:hover {
-                transform: none;
-            }
-        }
-    }
-}
-// Categories
-.categories {
-    .item {
-        &:hover {
-            opacity: 1;
         }
     }
 }

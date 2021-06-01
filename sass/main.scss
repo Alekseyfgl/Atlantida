@@ -1998,6 +1998,9 @@ footer {
 
         }
     }
+    .col-40 .contacts a:hover {
+        opacity: 1;
+    }
     .soc-net-form {
         ul {
             li {
@@ -2026,6 +2029,9 @@ footer {
                 border:4px solid #fff;
             }
         }
+    }
+    .social-networks svg:hover {
+        transform: none;
     }
 }
 // =========================================
