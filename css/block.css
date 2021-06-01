@@ -1203,12 +1203,53 @@ footer p {
     overflow: auto;
     opacity: 0.92;
   }
+  header a {
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  header a:hover {
+    opacity: 1;
+  }
+  header a:active {
+    color: #000;
+  }
+  header a:active::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -24px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #000;
+  }
+  header a:focus {
+    color: #aaa;
+    text-decoration: none;
+  }
   header .social-networks {
     display: none;
   }
 
+  .title-img .item-hover:hover {
+    opacity: 1;
+  }
+
+  .news__button:hover {
+    color: #3e3d3d;
+    background-color: transparent;
+  }
+
   .col-70 {
     margin-right: 0;
+  }
+
+  .post__container-img:hover {
+    box-shadow: none;
   }
 
   .gallery .image {
@@ -1219,6 +1260,13 @@ footer p {
   }
   .gallery span img {
     object-position: center 25%;
+  }
+  .gallery span img:hover {
+    transform: none;
+  }
+
+  .categories .item:hover {
+    opacity: 1;
   }
 
   .container-form {
