@@ -1,19 +1,12 @@
-// burger
 let burger = document.querySelector('.header-burger');
-
 burger.addEventListener('click', function(){
     let menu = document.querySelector('.header');
     let btn = document.querySelector('.header-burger');
     let body = document.querySelector('body');
-
     menu.classList.toggle('active');
     btn.classList.toggle('active');
     body.classList.toggle('lock');
 })
-
-
-
-
 
 const gallery = document.querySelectorAll(".image"),
     previewBox = document.querySelector(".preview-box"),
@@ -22,32 +15,29 @@ const gallery = document.querySelectorAll(".image"),
     currentImg = previewBox.querySelector(".current-img"),
     totalImg = previewBox.querySelector(".total-img"),
     shadow = document.querySelector(".shadow");
-
 window.onload = () => {
     for (let i = 0; i < gallery.length; i++) {
-        totalImg.textContent = gallery.length; //passing total img length to totalImg variable
-        let newIndex = i; //passing i value to newIndex variable
-        let clickedImgIndex; //creating new variable
-
+        totalImg.textContent = gallery.length; 
+        let newIndex = i;
+        let clickedImgIndex;
         gallery[i].onclick = () => {
-            clickedImgIndex = i; //passing cliked image index to created variable (clickedImgIndex)
+            clickedImgIndex = i; 
             function preview() {
-                currentImg.textContent = newIndex + 1; //passing current img index to currentImg varible with adding +1
-                let imageURL = gallery[newIndex].querySelector("img").src; //getting user clicked img url
-                previewImg.src = imageURL; //passing user clicked img url in previewImg src
+                currentImg.textContent = newIndex + 1; 
+                let imageURL = gallery[newIndex].querySelector("img").src; 
+                previewImg.src = imageURL; 
             }
-            preview(); //calling above function
-
+            preview();
             const prevBtn = document.querySelector(".prev");
             const nextBtn = document.querySelector(".next");
-            if (newIndex == 0) { //if index value is equal to 0 then hide prevBtn
+            if (newIndex == 0) { 
                 prevBtn.style.display = "none";
             }
-            if (newIndex >= gallery.length - 1) { //if index value is greater and equal to gallery length by -1 then hide nextBtn
+            if (newIndex >= gallery.length - 1) { 
                 nextBtn.style.display = "none";
             }
             prevBtn.onclick = () => {
-                newIndex--; //decrement index
+                newIndex--;
                 if (newIndex == 0) {
                     preview();
                     prevBtn.style.display = "none";
@@ -57,7 +47,7 @@ window.onload = () => {
                 }
             }
             nextBtn.onclick = () => {
-                newIndex++; //increment index
+                newIndex++; 
                 if (newIndex >= gallery.length - 1) {
                     preview();
                     nextBtn.style.display = "none";
@@ -70,7 +60,7 @@ window.onload = () => {
             previewBox.classList.add("show");
             shadow.style.display = "block";
             closeIcon.onclick = () => {
-                newIndex = clickedImgIndex; //assigning user first clicked img index to newIndex
+                newIndex = clickedImgIndex;
                 prevBtn.style.display = "block";
                 nextBtn.style.display = "block";
                 previewBox.classList.remove("show");
