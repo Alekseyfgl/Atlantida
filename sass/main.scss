@@ -60,6 +60,9 @@ nav {
     }
     li {
         margin-right: 16px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     a {
         color: #aaa;
@@ -1466,8 +1469,12 @@ nav {
             font-size: 13px;
             letter-spacing: 1.47px;
             margin-bottom: 7px;
+            width: fit-content;
             &:hover {
                 opacity: 0.6;
+            }
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
@@ -1996,9 +2003,12 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        .col-25 {
+        .col-25, .contacts {
             width: 100%;
         }  
+        .contacts {
+            align-items: center;
+        }
     }
     .col-60 {
         flex: 1 1 100%;
