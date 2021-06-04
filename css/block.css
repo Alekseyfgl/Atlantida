@@ -507,7 +507,6 @@ nav a:focus {
   display: flex;
 }
 .social-networks ul li {
-  height: 11px;
   margin-right: 6px;
 }
 .social-networks ul li:last-child {
@@ -703,16 +702,27 @@ nav a:focus {
 }
 
 .search {
+  position: relative;
   margin-bottom: 38px;
 }
 .search__item {
   width: 100%;
   border: 2px solid #a8a8a8;
   background-color: transparent;
-  padding: 12px 16px;
+  padding: 12px 46px 12px 16px;
 }
 .search__item:focus {
   border: 2px solid #000;
+}
+.search__btn {
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  background-color: transparent;
+}
+.search__img {
+  height: 14px;
+  fill: #3e3d3d;
 }
 .search [placeholder] {
   color: #3e3d3d;

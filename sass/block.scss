@@ -78,7 +78,7 @@ nav {
     ul {
         display: flex;
         li {
-            height: 11px;
+            // height: 11px;
             margin-right: 6px;
             &:last-child {
                 margin-right: 0;
@@ -291,21 +291,33 @@ nav {
     flex: 0 1 32%;
 }
 .search {
+    position: relative;
     margin-bottom: 38px;
     &__item {
         width: 100%;
         border: 2px solid #a8a8a8;
         background-color: transparent;
-        padding: 12px 16px;
+        padding: 12px 46px 12px 16px ;
         &:focus {
             border: 2px solid #000;
         }
+    }
+    &__btn {
+        position: absolute;
+        right: 18px;
+        top: 16px;
+        background-color: transparent;
+    }
+    &__img {
+        height: 14px;
+        fill: #3e3d3d;
     }
     [placeholder] {
         color: #3e3d3d;
         font-family: "CrimsonText-italic";
         font-size: 14px;
     }
+
 }
 .latest-post {
     // font-family: "Montserrat-bold";
