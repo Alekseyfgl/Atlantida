@@ -711,18 +711,25 @@ nav a:focus {
   background-color: transparent;
   padding: 12px 46px 12px 16px;
 }
-.search__item:focus {
-  border: 2px solid #000;
-}
 .search__btn {
   position: absolute;
-  right: 18px;
-  top: 16px;
+  right: 10px;
+  top: 8px;
   background-color: transparent;
+  height: 14px;
+  box-sizing: content-box;
+  padding: 8px;
+}
+.search__btn:hover svg {
+  transform: scale(1.2);
+}
+.search__btn:focus svg {
+  fill: #3e3d3d;
 }
 .search__img {
-  height: 14px;
-  fill: #3e3d3d;
+  height: 100%;
+  fill: #a8a8a8;
+  transition: 0.3s;
 }
 .search [placeholder] {
   color: #3e3d3d;
@@ -1254,6 +1261,10 @@ footer p {
 
   .title-img .item-hover:hover {
     opacity: 1;
+  }
+
+  .search__img:hover svg {
+    transform: none;
   }
 
   .news__button:hover {

@@ -298,26 +298,34 @@ nav {
         border: 2px solid #a8a8a8;
         background-color: transparent;
         padding: 12px 46px 12px 16px ;
-        &:focus {
-            border: 2px solid #000;
-        }
     }
     &__btn {
         position: absolute;
-        right: 18px;
-        top: 16px;
+        right: 10px;
+        top: 8px;
         background-color: transparent;
-    }
-    &__img {
         height: 14px;
-        fill: #3e3d3d;
+        box-sizing: content-box;
+        padding: 8px;
+        &:hover svg {
+            transform: scale(1.2);
+        }
+        &:focus svg {
+            fill: #3e3d3d;
+        }
+    }   
+    &__img {
+        height: 100%;
+        fill: #a8a8a8;
+        transition: 0.3s;
     }
+
     [placeholder] {
         color: #3e3d3d;
         font-family: "CrimsonText-italic";
         font-size: 14px;
     }
-
+    
 }
 .latest-post {
     // font-family: "Montserrat-bold";
@@ -995,6 +1003,14 @@ footer {
     .title-img {
         .item-hover:hover {
             opacity: 1;
+        }
+    }
+    // Serch
+    .search {
+        &__img {
+            &:hover svg {
+                transform: none;
+            }
         }
     }
     // news
