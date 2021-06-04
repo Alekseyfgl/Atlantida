@@ -193,6 +193,7 @@ nav {
     padding-top: 86px;
     padding-bottom: 86px;
 }
+
 .col-70 {
     flex: 0 1 63%;
     margin-right: 48px;
@@ -203,7 +204,9 @@ nav {
 // News
 .news {
     margin-bottom: 50px;
-
+    &:last-child {
+        margin-bottom: 0;
+    }
     &__container-img {
         width: 100%;
         margin-bottom: 38px;
@@ -557,8 +560,7 @@ nav {
     }
 }
 .gallery {
-    // display: flex;
-    // flex-wrap: wrap;
+
     h2 {
         font-family: "Montserrat-bold";
         font-size: 16px;
@@ -1007,6 +1009,12 @@ footer {
     .title-img {
         .item-hover:hover {
             opacity: 1;
+        }
+    }
+    // .news 
+    .news {
+        &:last-child {
+            margin-bottom: 50px;
         }
     }
     // Serch
