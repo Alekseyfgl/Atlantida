@@ -301,6 +301,9 @@ nav {
         border: 2px solid #a8a8a8;
         background-color: transparent;
         padding: 12px 46px 12px 16px ;
+        &:focus {
+            border-color: #3e3d3d;
+        }
     }
     &__btn {
         position: absolute;
@@ -1004,6 +1007,7 @@ footer {
             display: none;
         }
     }
+
     // ================================
     // title-img
     .title-img {
