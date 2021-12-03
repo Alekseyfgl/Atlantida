@@ -78,7 +78,6 @@ nav {
     ul {
         display: flex;
         li {
-            // height: 11px;
             margin-right: 6px;
             &:last-child {
                 margin-right: 0;
@@ -333,13 +332,7 @@ nav {
     }
     
 }
-.latest-post {
-    // font-family: "Montserrat-bold";
-    // font-size: 16px;
-    // text-transform: uppercase;
-    // letter-spacing: 1.81px;
-    // margin-bottom: 36px;
-}
+
 .post {
     padding-bottom: 32px;
     padding-top: 32px;
@@ -357,8 +350,6 @@ nav {
     }
     &__container-img {
         flex: 1 1 40%;
-        // width: 112px;
-        // height: 108px;
         margin-right: 18px;
         overflow: hidden;
         transition: 0.3s;
@@ -447,53 +438,6 @@ nav {
 // Categories
 .categories {
     margin-bottom: 62px;
-    &__title {
-        // font-family: "Montserrat-bold";
-        // font-size: 16px;
-        // text-transform: uppercase;
-        // letter-spacing: 1.81px;
-        // margin-bottom: 38px;
-    }
-    &__list {
-    }
-    &__items {
-        // padding-top: 22px;
-        // padding-bottom: 22px;
-        // border-bottom: 1px solid #b7b7b7;
-        // border-top: 1px solid #b7b7b7;
-        // &:first-child {
-        //     border-top: none;
-        //     padding-top: 0;
-        // }
-        // &:last-child {
-        //     margin-bottom: 62px;
-        // }
-    }
-    &__item {
-        // display: block;
-        // font-family: "CrimsonText-italic";
-        // font-size: 16px;
-        // color: #3e3d3d;
-        // &::before {
-        //     content: "";
-        //     display: inline-block;
-        //     width: 0;
-        //     height: 0;
-        //     border-style: solid;
-        //     border-width: 3.5px 0 3.5px 4px;
-        //     border-color: transparent transparent transparent #3e3d3d;
-        //     position: relative;
-        //     top: -2px;
-        //     left: 0;
-        //     padding-right: 8px;
-        // }
-        // &:focus {
-        //     text-decoration: underline;
-        // }
-        // &:hover {
-        //     opacity: 0.6;
-        // }
-    }
 }
 // ================================================
 
@@ -501,58 +445,7 @@ nav {
 // Archives
 .archives {
     margin-bottom: 62px;
-    &__title {
-        // font-family: "Montserrat-bold";
-        // font-size: 16px;
-        // text-transform: uppercase;
-        // letter-spacing: 1.81px;
-        // margin-bottom: 38px;
-    }
-    &__list {
-    }
-    &__items {
-        // padding-top: 22px;
-        // padding-bottom: 22px;
-        // border-bottom: 1px solid #b7b7b7;
-        // border-top: 1px solid #b7b7b7;
-        // &:first-child {
-        //     border-top: none;
-        //     padding-top: 0;
-        // }
-        // &:last-child {
-        //     margin-bottom: 62px;
-        // }
-    }
-    &__item {
-        // display: block;
-        // font-family: "CrimsonText-italic";
-        // font-size: 16px;
-        // color: #3e3d3d;
-        // &::before {
-        //     content: "";
-        //     display: inline-block;
-        //     width: 0;
-        //     height: 0;
-        //     border-style: solid;
-        //     border-width: 3.5px 0 3.5px 4px;
-        //     border-color: transparent transparent transparent #3e3d3d;
-        //     position: relative;
-        //     top: -2px;
-        //     left: 0;
-        //     padding-right: 8px;
-        // }
-        // &:focus {
-        //     text-decoration: underline;
-        // }
-        // &:hover {
-        //     opacity: 0.6;
-        // }
-    }
 }
-// ================================================
-
-// ============================================
-// galary
 .wr-flick-photo {
     h2 {
         font-family: "Montserrat-bold";
@@ -608,6 +501,7 @@ nav {
     background-color: #fff;
     padding: 0px 5px 5px 5px;
     border-radius: 3px;
+    box-shadow: 0 0 15px rbga(0, 0, 0, 0.2);
     z-index: 5;
 
     opacity: 0;
@@ -665,7 +559,6 @@ nav {
             width: 70px;
             height: 70px;
             background-color: transparent;
-            // border-radius: 50%;
 
             svg {
                 height: 18px;
@@ -679,7 +572,6 @@ nav {
                     z-index: 3;
                     cursor: pointer;
                 }
-                // для мобилки чтобы клац клац
                 &::after {
                     content: "";
                     display: inline-block;
@@ -698,7 +590,6 @@ nav {
                     z-index: 3;
                     cursor: pointer;
                 }
-                // для мобилки чтобы клац клац
                 &::after {
                     content: "";
                     display: inline-block;
@@ -764,8 +655,6 @@ nav {
 // ====================
 // form
 .form {
-    // padding-top: 60px;
-    // padding-bottom: 60px;
     background-image: url(../img/index/form/Background-s.jpg);
     background-repeat: repeat;
 }
@@ -935,9 +824,6 @@ footer {
         }
         .wr-absolut {
             position: fixed;
-            // width: 100%;
-            // z-index: 5;
-            // background-color: rgb(185, 179, 179);
             &::before {
                 position: absolute;
                 top: 0;
@@ -955,7 +841,6 @@ footer {
             height: 20px;
             z-index: 20;
             background: transparent;
-            // transition: 5.6s;
             position: absolute;
             right: 20px;
             top: 20px;
@@ -1155,9 +1040,7 @@ footer {
     .col-30 {
         flex: 0 1 100%;
     }
-    // .news {
-    //     margin-right: 0;
-    // }
+
     .container-form .col-60 [type=submit]:hover {
         box-shadow: none;
     }
@@ -1196,8 +1079,6 @@ footer {
                 width: 200px;
                 height: 16px;
                 display: inline-block;
-                // background-color: #fff;
-
                 position: absolute;
                 left: 50%;
                 top: 36px;
@@ -1289,8 +1170,7 @@ footer {
         }
         a {
             font-size: 24px;
-            // padding-top: 15px;
-            // padding-bottom: 15px;
+
             display: block;
             width: 100%;
             position: relative;
@@ -1319,23 +1199,4 @@ footer {
         }
     }
 }
-// =====================================================================
 
-// @media (max-width: 1000px) {
-// .gallery {
-//     .image {
-//         width: calc(100% / 2);
-//         span {
-//             height: 180px;
-//         }
-//     }
-// }
-// }
-// @media (max-width: 600px) {
-//     // .gallery {
-//     //     .image {
-//     //         padding: 4px;
-//     //         width: 100%;
-//     //     }
-//     // }
-// }
