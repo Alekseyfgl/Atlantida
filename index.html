@@ -12,59 +12,933 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="wr-absolut">
-            <div class="wrapper">
-                <div class="header-body">
-                    <a class="header-logo" href="./index.html">
-                        <div class="wr-img-label">
-                            <img src="./img/icon/icon-logo.png" alt="Atlantida">
-                        </div>
-                        <p>ATLANTIDA</p>
-                    </a>
-                    <div class="header-burger">
-                        <span></span>
+<!-- Header -->
+<header class="header">
+    <div class="wr-absolut">
+        <div class="wrapper">
+            <div class="header-body">
+                <a class="header-logo" href="./index.html">
+                    <div class="wr-img-label">
+                        <img src="./img/icon/icon-logo.png" alt="Atlantida">
                     </div>
-                    <nav>
-                        <ul class="menuList">
-                            <li>
-                                <a href="./index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="./block.html">Blog with sidebar</a>
-                            </li>
-                            <li>
-                                <a href="#about">About</a>
-                            </li>
-                            <li>
-                                <a href="#servis">Servies</a>
-                            </li>
-                            <li>
-                                <a href="#history">History</a>
-                            </li>
-                            <li>
-                                <a href="#team">Team</a>
-                            </li>
-                            <li>
-                                <a href="#portfolio">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#prices">Prices</a>
-                            </li>
-                            <li>
-                                <a href="#form">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <p>ATLANTIDA</p>
+                </a>
+                <div class="header-burger">
+                    <span></span>
+                </div>
+                <nav>
+                    <ul class="menuList">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./block.html">Blog with sidebar</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#servis">Servies</a>
+                        </li>
+                        <li>
+                            <a href="#history">History</a>
+                        </li>
+                        <li>
+                            <a href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#prices">Prices</a>
+                        </li>
+                        <li>
+                            <a href="#form">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
 
-                    <div class="social-networks">
+                <div class="social-networks">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <svg viewBox="0 0 448 512">
+                                    <path
+                                            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg viewBox="0 0 512 512">
+                                    <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg viewBox="0 0 576 512">
+                                    <path
+                                            d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
+                                    </path>
+                                </svg>
+                            </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Slider -->
+<section class="atlantida-slider">
+    <div class="wrapper-slider">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="./img/index/slide/slide-1@1x.avif 1x,
+                                            ./img/index/slide/slide-1@2x.avif 2x,
+                                            ./img/index/slide/slide-1@3x.avif 3x" type="image/avif">
+
+                        <source srcset="./img/index/slide/slide-1@1x.webp 1x,
+                                            ./img/index/slide/slide-1@2x.webp 2x,
+                                            ./img/index/slide/slide-1@3x.webp 3x" type="image/webp">
+
+                        <img srcset="./img/index/slide/slide-1@2x.jpg 2x,
+                                         ./img/index/slide/slide-1@3x.jpg 3x" src="./img/index/slide/slide-1@1x.jpg"
+                             alt="Atlatida">
+                    </picture>
+                    <div class="text-slider">
+                        <h1>Design Studio and Digital Agency</h1>
+                        <h2>WE ARE ATLANTIDA.</h2>
+                        <a href="#about">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="./img/index/slide/slide-2@1x.avif 1x,
+                                            ./img/index/slide/slide-2@2x.avif 2x,
+                                            ./img/index/slide/slide-2@3x.avif 3x" type="image/avif">
+
+                        <source srcset="./img/index/slide/slide-2@1x.webp 1x,
+                                            ./img/index/slide/slide-2@2x.webp 2x,
+                                            ./img/index/slide/slide-2@3x.webp 3x" type="image/webp">
+
+                        <img srcset="./img/index/slide/slide-2@2x.jpg 2x,
+                                         ./img/index/slide/slide-2@3x.jpg 3x" src="./img/index/slide/slide-2@1x.jpg"
+                             alt="Atlatida">
+                    </picture>
+                    <div class="text-slider">
+                        <p>Design Studio and Digital Agency</p>
+                        <h2>Lorem, ipsum</h2>
+                        <a href="#about">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+            <svg viewBox="0 0 320 512">
+                <path
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                </path>
+            </svg>
+        </div>
+        <div class="swiper-button-next">
+            <svg viewBox="0 0 320 512">
+                <path
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                </path>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- About-as -->
+<section id="about" class="about-as mobile">
+    <div class="wrapper">
+        <div class="sub-wrapper">
+            <div class="about-as-border-image">
+                <picture>
+                    <source srcset="./img/index/about-as/about@1x.avif 1x,
+                                        ./img/index/about-as/about@2x.avif 2x" type="image/avif">
+
+                    <source srcset="./img/index/about-as/about@1x.webp 1x,
+                                        ./img/index/about-as/about@2x.webp 2x" type="image/webp">
+
+                    <img srcset="./img/index/about-as/about@2x.jpg 2x" src="./img/index/about-as/about@1x.jpg"
+                         alt="about-atlantida">
+                </picture>
+            </div>
+            <h2 class="started section-title">ABOUT US</h2>
+            <p>
+                Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in
+                erat.
+                Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque.
+                Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in
+                aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate
+                id
+                finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis
+                pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor
+                viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id
+                tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante.
+            </p>
+            <div class="about-as-button">
+                <a href="">Contact Us</a>
+                <a href="">Portfolio</a>
+            </div>
+        </div>
+        <div class="about-row">
+            <div class="about-items">
+                <img src="./img/index/about-as/icon/icon-1.png" alt="awards-winner">
+                <h3>AWARDS
+                    WINNER</h3>
+                <p>54</p>
+            </div>
+            <div class="about-items">
+                <img src="./img/index/about-as/icon/icon-2.png" alt="jobs-done">
+                <h3>JOBS
+                    DONE</h3>
+                <p>1054</p>
+            </div>
+            <div class="about-items">
+                <img src="./img/index/about-as/icon/icon-3.png" alt="happy-clients">
+                <h3>HAPPY
+                    CLIENTS</h3>
+                <p>120</p>
+            </div>
+            <div class="about-items">
+                <img src="./img/index/about-as/icon/icon-4.png" alt="reviews-recieved">
+                <h3>reviews
+                    recieved</h3>
+                <p>54</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="servis" class="services mobile">
+    <div class="wrapper">
+        <div class="sub-wrapper-services">
+            <h2 class="section-title">SERVICES</h2>
+            <p class="section-sub-title">Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut
+                vehicula odio lorem in erat.
+                Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque.
+            </p>
+        </div>
+        <div class="container-services">
+
+            <div class="items-services">
+                <svg viewBox="0 0 32 32">
+                    <path
+                            d="M 6.8125 2.40625 L 5.40625 3.8125 L 7.5 5.90625 L 8.90625 4.5 Z M 25.1875 2.40625 L 23.09375 4.5 L 24.5 5.90625 L 26.59375 3.8125 Z M 16 3.03125 C 15.671875 3.035156 15.335938 3.054688 15 3.09375 C 14.988281 3.09375 14.980469 3.09375 14.96875 3.09375 C 10.914063 3.558594 7.6875 6.835938 7.125 10.875 C 6.675781 14.125 8.015625 17.070313 10.25 18.96875 C 11.207031 19.789063 11.796875 20.882813 12 22 L 12 28 L 14.28125 28 C 14.628906 28.597656 15.261719 29 16 29 C 16.738281 29 17.371094 28.597656 17.71875 28 L 20 28 L 20 24 L 20.09375 24 L 20.09375 22.8125 C 20.09375 21.347656 20.855469 19.867188 22.09375 18.71875 C 23.75 17.0625 25 14.707031 25 12 C 25 7.058594 20.933594 2.984375 16 3.03125 Z M 16 5.03125 C 19.863281 4.976563 23 8.140625 23 12 C 23 14.09375 22.03125 15.9375 20.6875 17.28125 L 20.71875 17.3125 C 19.375 18.566406 18.515625 20.207031 18.28125 22 L 13.90625 22 C 13.6875 20.285156 12.949219 18.628906 11.5625 17.4375 C 9.796875 15.933594 8.742188 13.675781 9.09375 11.125 C 9.53125 7.972656 12.085938 5.441406 15.21875 5.09375 C 15.480469 5.0625 15.742188 5.035156 16 5.03125 Z M 2 12 L 2 14 L 5 14 L 5 12 Z M 27 12 L 27 14 L 30 14 L 30 12 Z M 7.5 20.09375 L 5.40625 22.1875 L 6.8125 23.59375 L 8.90625 21.5 Z M 24.5 20.09375 L 23.09375 21.5 L 25.1875 23.59375 L 26.59375 22.1875 Z M 14 24 L 18 24 L 18 26 L 14 26 Z"/>
+                </svg>
+                <h3>GRAPHIC
+                    DESIGN</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+                    ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
+                    non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.
+
+                </p>
+            </div>
+
+            <div class="items-services">
+                <svg viewBox="0 0 576 512">
+                    <path
+                            d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z">
+                    </path>
+                </svg>
+                <h3>WEBSITE
+                    DESIGN</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+                    ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
+                    non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.</p>
+            </div>
+
+            <div class="items-services">
+
+                <svg viewBox="0 0 512 512">
+                    <path
+                            d="M396.8 352h22.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-192 0h22.4c6.4 0 12.8-6.4 12.8-12.8V140.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h22.4c6.4 0 12.8-6.4 12.8-12.8V204.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zM496 400H48V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16zm-387.2-48h22.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8z">
+                    </path>
+                </svg>
+                <h3>SEO &
+                    ANALITYCS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+                    ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
+                    non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.</p>
+            </div>
+
+            <div class="items-services">
+
+                <svg viewBox="0 0 512 512">
+                    <path
+                            d="M256 8C119.3 8 8 119.2 8 256c0 136.7 111.3 248 248 248s248-111.3 248-248C504 119.2 392.7 8 256 8zM33 256c0-32.3 6.9-63 19.3-90.7l106.4 291.4C84.3 420.5 33 344.2 33 256zm223 223c-21.9 0-43-3.2-63-9.1l66.9-194.4 68.5 187.8c.5 1.1 1 2.1 1.6 3.1-23.1 8.1-48 12.6-74 12.6zm30.7-327.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-21.9 0-58.7-2.8-58.7-2.8-12-.7-13.4 17.7-1.4 18.4 0 0 11.4 1.4 23.4 2.1l34.7 95.2L200.6 393l-81.2-241.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-4.2 0-9.1-.1-14.4-.3C109.6 73 178.1 33 256 33c58 0 110.9 22.2 150.6 58.5-1-.1-1.9-.2-2.9-.2-21.9 0-37.4 19.1-37.4 39.6 0 18.4 10.6 33.9 21.9 52.3 8.5 14.8 18.4 33.9 18.4 61.5 0 19.1-7.3 41.2-17 72.1l-22.2 74.3-80.7-239.6zm81.4 297.2l68.1-196.9c12.7-31.8 17-57.2 17-79.9 0-8.2-.5-15.8-1.5-22.9 17.4 31.8 27.3 68.2 27.3 107 0 82.3-44.6 154.1-110.9 192.7z">
+                    </path>
+                </svg>
+                <h3>WORDPRESS
+                    PROGRAMING</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+                    ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
+                    non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- History -->
+<section id="history" class="history mobile">
+    <div class="wrapper">
+        <div class="sub-wrapper-history .sub-wr">
+            <h2 class="section-title">HISTORY</h2>
+            <p class="section-sub-title ">
+                In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros tortor non
+                arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci vestibulum sit amet.
+
+            </p>
+        </div>
+
+        <div class="container-history">
+            <!-- 2021 -->
+            <div class="name-year-2021 name-year">2021</div>
+            <div class="column-history-2021 colum-history">
+                <div class="items-history">
+                    <h3>Donec id lobortis tellus. Maecenas vel dignissim</h3>
+                    <p>07 October 2015</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
+                        fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos.
+                    </p>
+                </div>
+
+                <div class="items-history">
+                    <h3>Nam tincidunt, lacus sit amet ultrices </h3>
+                    <p>05 June 2015</p>
+                    <p>In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros
+                        tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci
+                        vestibulum sit amet. Donec quis faucibus lorem. </p>
+                </div>
+
+                <div class="items-history">
+                    <h3>Donec quis faucibus lorem</h3>
+                    <p>07 May 2015</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
+                        fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos.</p>
+                </div>
+
+                <div class="items-history">
+                    <h3>Nunc efficitur laoreet turpis sed auctor.</h3>
+                    <p>02 April 2015</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
+                        fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas.</p>
+                </div>
+            </div>
+
+            <!-- 2021 -->
+            <div class="name-year-2020 name-year">2020</div>
+            <div class="column-history-2020 colum-history">
+                <div class="items-history">
+                    <h3>Donec id lobortis tellus. Maecenas vel dignissim</h3>
+                    <p>07 October 2015</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas.
+
+                </div>
+
+                <div class="items-history">
+                    <h3>Nam tincidunt, lacus sit amet ultrices </h3>
+                    <p>05 June 2015</p>
+                    <p>In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros
+                        tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci
+                        vestibulum sit amet. Donec quis faucibus lorem. </p>
+                </div>
+            </div>
+
+            <!-- lamp -->
+            <div class="lamp name-year">
+                <svg viewBox="0 0 32 32">
+                    <path
+                            d="M 6.8125 2.40625 L 5.40625 3.8125 L 7.5 5.90625 L 8.90625 4.5 Z M 25.1875 2.40625 L 23.09375 4.5 L 24.5 5.90625 L 26.59375 3.8125 Z M 16 3.03125 C 15.671875 3.035156 15.335938 3.054688 15 3.09375 C 14.988281 3.09375 14.980469 3.09375 14.96875 3.09375 C 10.914063 3.558594 7.6875 6.835938 7.125 10.875 C 6.675781 14.125 8.015625 17.070313 10.25 18.96875 C 11.207031 19.789063 11.796875 20.882813 12 22 L 12 28 L 14.28125 28 C 14.628906 28.597656 15.261719 29 16 29 C 16.738281 29 17.371094 28.597656 17.71875 28 L 20 28 L 20 24 L 20.09375 24 L 20.09375 22.8125 C 20.09375 21.347656 20.855469 19.867188 22.09375 18.71875 C 23.75 17.0625 25 14.707031 25 12 C 25 7.058594 20.933594 2.984375 16 3.03125 Z M 16 5.03125 C 19.863281 4.976563 23 8.140625 23 12 C 23 14.09375 22.03125 15.9375 20.6875 17.28125 L 20.71875 17.3125 C 19.375 18.566406 18.515625 20.207031 18.28125 22 L 13.90625 22 C 13.6875 20.285156 12.949219 18.628906 11.5625 17.4375 C 9.796875 15.933594 8.742188 13.675781 9.09375 11.125 C 9.53125 7.972656 12.085938 5.441406 15.21875 5.09375 C 15.480469 5.0625 15.742188 5.035156 16 5.03125 Z M 2 12 L 2 14 L 5 14 L 5 12 Z M 27 12 L 27 14 L 30 14 L 30 12 Z M 7.5 20.09375 L 5.40625 22.1875 L 6.8125 23.59375 L 8.90625 21.5 Z M 24.5 20.09375 L 23.09375 21.5 L 25.1875 23.59375 L 26.59375 22.1875 Z M 14 24 L 18 24 L 18 26 L 14 26 Z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our-team -->
+<section id="team" class="our-team mobile">
+    <div class="wrapper">
+        <div class="sub-wrapper-team">
+            <h2 class="section-title">OUR TEAM</h2>
+            <p class="section-sub-title">
+                Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum
+                dolor, sit amet pretium odio
+                magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
+                ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
+            </p>
+        </div>
+        <div class="container-team">
+            <div class="items-team">
+                <div class="wrapper-img-team">
+                    <picture>
+                        <source srcset="./img/index/team/image-people-1@1x.avif 1x,
+                                        ./img/index/team/image-people-1@2x.avif 2x,
+                                        ./img/index/team/image-people-1@3x.avif 3x" type="image/avif">
+
+                        <source srcset="./img/index/team/image-people-1@1x.webp 1x,
+                                        ./img/index/team/image-people-1@2x.webp 2x,
+                                        ./img/index/team/image-people-1@3x.webp 3x" type="image/webp">
+
+                        <img srcset="./img/index/team/image-people-1@2x.jpg 2x,
+                                     ./img/index/team/image-people-1@2x.jpg 3x"
+                             src="./img/index/team/image-people-1@1x.jpg" alt="foto-team">
+                    </picture>
+                </div>
+                <div class="focus-team">
+                    <h3>Jilia Smith</h3>
+                    <p>Designe</p>
+                    <ul>
+                        <li><a href="">
+                            <svg viewBox="0 0 448 512">
+                                <path
+                                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                                </path>
+                            </svg>
+                        </a></li>
+                        <li><a href="">
+                            <svg viewBox="0 0 512 512">
+                                <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                        </a></li>
+                        <li><a href="">
+                            <svg viewBox="0 0 576 512">
+                                <path
+                                        d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
+                                </path>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="items-team">
+                <div class="wrapper-img-team">
+                    <picture>
+                        <source srcset="./img/index/team/image-people-2@1x.avif 1x,
+                                        ./img/index/team/image-people-2@2x.avif 2x,
+                                        ./img/index/team/image-people-2@3x.avif 3x" type="image/avif">
+
+                        <source srcset="./img/index/team/image-people-2@1x.webp 1x,
+                                        ./img/index/team/image-people-2@2x.webp 2x,
+                                        ./img/index/team/image-people-2@3x.webp 3x" type="image/webp">
+
+                        <img srcset="./img/index/teame/image-people-2@2x.jpg 2x,
+                                     ./img/index/teame/image-people-2@2x.jpg 3x"
+                             src="./img/index/teame/image-people-2@1x.jpg" alt="photo-team">
+                    </picture>
+                </div>
+                <div class="focus-team">
+                    <h3>Jilia Smith</h3>
+                    <p>Designer</p>
+                    <ul>
+                        <li><a href="">
+                            <svg viewBox="0 0 448 512">
+                                <path
+                                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                                </path>
+                            </svg>
+                        </a></li>
+                        <li><a href="">
+                            <svg viewBox="0 0 512 512">
+                                <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                        </a></li>
+                        <li><a href="">
+                            <svg viewBox="0 0 576 512">
+                                <path
+                                        d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
+                                </path>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="items-team">
+                <div class="wrapper-img-team">
+                    <picture>
+                        <source srcset="./img/index/team/image-people-3@1x.avif 1x,
+                                        ./img/index/team/image-people-3@2x.avif 2x,
+                                        ./img/index/team/image-people-3@3x.avif 3x" type="image/avif">
+
+                        <source srcset="./img/index/team/image-people-3@1x.webp 1x,
+                                        ./img/index/team/image-people-3@2x.webp 2x,
+                                        ./img/index/team/image-people-3@3x.webp 3x" type="image/webp">
+
+                        <img srcset="./img/index/team/image-people-3@2x.jpg 2x,
+                                     ./img/index/team/image-people-3@2x.jpg 3x"
+                             src="./img/index/team/image-people-3@1x.jpg" alt="foto-team">
+                    </picture>
+                </div>
+                <div class="focus-team">
+                    <h3>Jilia Smith</h3>
+                    <p>Designer</p>
+                    <ul>
+                        <li><a href="">
+                            <svg viewBox="0 0 448 512">
+                                <path
+                                        d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                                </path>
+                            </svg>
+                        </a></li>
+                        <li><a href="">
+                            <svg viewBox="0 0 512 512">
+                                <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg>
+                        </a></li>
+                        <li><a href="">
+                            <svg viewBox="0 0 576 512">
+                                <path
+                                        d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
+                                </path>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio">
+    <div class="wrapper">
+        <div class="sub-wrapper-portfolio">
+            <h2 class="section-title">PORTFOLIO</h2>
+            <p class="section-sub-title">Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum
+                dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis,
+                turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget
+                risus.</p>
+        </div>
+        <div class="portfolio-buttom">
+            <a href="">ALL</a>
+            <a href="">BROCHURES </a>
+            <a href="">WEBSITE</a>
+            <a href="">LOGOS</a>
+        </div>
+    </div>
+    <div class="container-portfolio">
+        <div class="wr-img-60 img-1">
+            <img src="./img/index/portfolio/1.jpg " alt="family-photos">
+        </div>
+        <div class="wr-img-40 img-2">
+            <img src="./img/index/portfolio/2.jpg " alt="family-photos">
+        </div>
+        <div class="wr-img-30  img-3">
+            <img src="./img/index/portfolio/3.jpg " alt="family-photos">
+        </div>
+        <div class="wr-img-70  img-4">
+            <img src="./img/index/portfolio/4.jpg " alt="family-photos">
+        </div>
+        <div class="wr-img-40  img-5">
+            <img src="./img/index/portfolio/5.jpg " alt="family-photos">
+        </div>
+        <div class="wr-img-60  img-6">
+            <img src="./img/index/portfolio/6.jpg " alt="family-photos">
+        </div>
+        <div class="wr-img-70  img-7">
+            <img src="./img/index/portfolio/7.jpg " alt="family-photos">
+        </div>
+        <div class="wr-img-30  img-8">
+            <img src="./img/index/portfolio/8.jpg " alt="family-photos">
+        </div>
+    </div>
+</section>
+
+<!-- Prices -->
+<section id="prices" class="prices mobile">
+    <div class="wrapper">
+        <div class="sub-wrapper-prices">
+            <h2 class="section-title">PRICES</h2>
+            <p class="section-sub-title">
+                Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium
+                odio
+                magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
+                ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
+            </p>
+        </div>
+        <div class="container-prices">
+
+            <div class="items-prices">
+                <h3>BASIC</h3>
+                <div class="wrap-img-prices">
+                    <img src="./img/index/prices/icon-prices/basic.png" alt="basic">
+                </div>
+                <p>10</p>
+                <ul>
+                    <li>Full Access</li>
+                    <li>Unlimited Edition</li>
+                    <li>Full Backup</li>
+                    <li>Free Tea and Free Mockup</li>
+                    <li>Several Prices</li>
+                </ul>
+                <a href="">Sign Up</a>
+            </div>
+
+            <div class="items-prices">
+                <h3>ADVANCED</h3>
+                <div class="wrap-img-prices">
+                    <img src="./img/index/prices/icon-prices/advanced.png" alt="advanced">
+                </div>
+
+                <p>20</p>
+
+                <ul>
+                    <li>Full Access</li>
+                    <li>Unlimited Edition</li>
+                    <li>Full Backup</li>
+                    <li>Free Tea and Free Mockup</li>
+                    <li>Several Prices</li>
+                </ul>
+                <a href="">Sign Up</a>
+            </div>
+
+            <div class="items-prices">
+                <h3>PRO</h3>
+                <div class="wrap-img-prices">
+                    <img src="./img/index/prices/icon-prices/pro.png" alt="pro">
+                </div>
+
+                <p>30</p>
+
+                <ul>
+                    <li>Full Access</li>
+                    <li>Unlimited Edition</li>
+                    <li>Full Backup</li>
+                    <li>Free Tea and Free Mockup</li>
+                    <li>Several Prices</li>
+                </ul>
+                <a href="">Sign Up</a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</section>
+
+<!-- Looking -->
+<section class="looking">
+    <div class="wrapper wr-looking">
+        <div class="wr-img-looking">
+            <img src="./img/index/looking/looking.png" alt="looking-for-quality">
+        </div>
+        <div class="text">
+            <h3>Looking for a quality and affordable for your next project ?</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus
+                sed
+                in dolor.
+                Etiam iaculis, nibh a lobortis egestas, est urna sodales
+            </p>
+        </div>
+        <a href="">Purchase</a>
+    </div>
+</section>
+
+<!-- Blog -->
+<section class="blog">
+    <div class="wrapper wr-blog">
+        <h2 class="section-title">BLOG</h2>
+        <p class="section-sub-title">
+            Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio
+            magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
+            ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
+        </p>
+    </div>
+
+    <div class="container-blog">
+        <div class="sub-container">
+            <a href="" class="container-img">
+                <picture>
+                    <source srcset="./img/index/blog/img-1@1x.avif 1x,
+                                        ./img/index/blog/img-1@2x.avif 2x,
+                                        ./img/index/blog/img-1@3x.avif 3x" type="image/avif">
+
+                    <source srcset="./img/index/blog/img-1@1x.webp 1x,
+                                        ./img/index/blog/img-1@2x.webp 2x,
+                                        ./img/index/blog/img-1@3x.webp 3x" type="image/webp">
+
+                    <img srcset="./img/index/blog/img-1@2x.jpg 2x,
+                                     ./img/index/blog/img-1@3x.jpg 3x" src="./img/index/blog/img-1@1x.jpg"
+                         alt="picture-blog">
+                </picture>
+            </a>
+            <div class="text-blog">
+                <h4>14 Aug 2015 / By Admin</h4>
+                <a href="">Donec id lobortis tellus Maecenas.</a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                    consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
+                </p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <a href="" class="container-img">
+                <picture>
+                    <source srcset="./img/index/blog/img-2@1x.avif 1x,
+                                        ./img/index/blog/img-2@2x.avif 2x,
+                                        ./img/index/blog/img-2@3x.avif 3x" type="image/avif">
+
+                    <source srcset="./img/index/blog/img-2@1x.webp 1x,
+                                        ./img/index/blog/img-2@2x.webp 2x,
+                                        ./img/index/blog/img-2@3x.webp 3x" type="image/webp">
+
+                    <img srcset="./img/index/blog/img-2@2x.jpg 2x,
+                                    ./img/index/blog/img-2@3x.jpg 3x" src="./img/index/blog/img-2@1x.jpg"
+                         alt="picture-blog">
+                </picture>
+            </a>
+            <div class="text-blog">
+                <h4>14 Aug 2015 / By Admin</h4>
+                <a href="">Donec id lobortis tellus Maecenas.</a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+                    ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
+                </p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <a href="" class="container-img">
+                <picture>
+                    <source srcset="./img/index/blog/img-3@1x.avif 1x,
+                                        ./img/index/blog/img-3@2x.avif 2x,
+                                        ./img/index/blog/img-3@3x.avif 3x" type="image/avif">
+
+                    <source srcset="./img/index/blog/img-3@1x.webp 1x,
+                                        ./img/index/blog/img-3@2x.webp 2x,
+                                        ./img/index/blog/img-3@3x.webp 3x" type="image/webp">
+
+                    <img srcset="./img/index/blog/img-3@2x.jpg 2x,
+                                    ./img/index/blog/img-3@3x.jpg 3x" src="./img/index/blog/img-2@1x.jpg"
+                         alt="Atlatida">
+                </picture>
+            </a>
+            <div class="text-blog">
+                <h4>14 Aug 2015 / By Admin</h4>
+                <a href="">Donec id lobortis tellus Maecenas.</a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+                    ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas.
+
+                </p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <a href="" class="container-img">
+                <picture>
+                    <source srcset="./img/index/blog/img-4@1x.avif 1x,
+                                        ./img/index/blog/img-4@2x.avif 2x,
+                                        ./img/index/blog/img-4@3x.avif 3x" type="image/avif">
+
+                    <source srcset="./img/index/blog/img-4@1x.webp 1x,
+                                        ./img/index/blog/img-4@2x.webp 2x,
+                                        ./img/index/blog/img-4@3x.webp 3x" type="image/webp">
+
+                    <img srcset="./img/index/blog/img-4@2x.jpg 2x,
+                                    ./img/index/blog/img-4@3x.jpg 3x" src="./img/index/blog/img-4@1x.jpg"
+                         alt="Atlatida">
+                </picture>
+            </a>
+            <div class="text-blog">
+                <h4>14 Aug 2015 / By Admin</h4>
+                <a href="">Donec id lobortis tellus Maecenas.</a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
+                    ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas.
+
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<!-- Clients -->
+<section class="clients mobile">
+    <div class="wrapper">
+        <div class="sub-wrapper-clients">
+            <h2 class="section-title">CLIENTS</h2>
+            <p class="section-sub-title">
+                Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium
+                odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat
+                vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="clients-logo">
+        <ul>
+            <li>
+                <a href=""><img src="./img/index/clients/1.png" alt="brando-logo"></a>
+            </li>
+            <li>
+                <a href=""><img src="./img/index/clients/2.png" alt="workwear-logo"></a>
+            </li>
+            <li>
+                <a href=""><img src="./img/index/clients/3.png" alt="hamburger-logo"></a>
+            </li>
+            <li>
+                <a href=""><img src="./img/index/clients/4.png" alt="motocycles-logo"></a>
+            </li>
+            <li>
+                <a href=""><img src="./img/index/clients/5.png" alt="cassandra-logo"></a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Slider human -->
+<section class="slider-personal">
+
+
+    <!-- Slider main container -->
+    <div class="swiper-container swiper-container-client">
+        <!-- Additional required wrapper  -->
+        <div class="swiper-wrapper swiper-wrapper-client">
+
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide-client">
+                <div class="container-img-slider">
+                    <a href="https://twitter.com/elonmusk" target="blank">
+                        <img src="./img/index/slider-people/mask.jpg" alt="foto-musk"></a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
+                    finibus sed in dolor.
+                    Etiam iaculis, nibh a lobortis egestas, est urna sodales
+                </p>
+                <h2>Elon Musk</h2>
+                <h3>Free-PSD-Template.com Company</h3>
+            </div>
+
+            <div class="swiper-slide swiper-slide-client">
+                <div class="container-img-slider">
+                    <a href="https://twitter.com/warrenbuffett" target="blank
+                        "><img src="./img/index/slider-people/buffet.jpg" alt="foto-buffet"></a>
+
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
+                    finibus sed in dolor.
+                    Etiam iaculis, nibh a lobortis egestas, est urna sodales
+                </p>
+                <h2>Warren Buffett
+                </h2>
+                <h3>Free-PSD-Template.com Company</h3>
+            </div>
+
+            <div class="swiper-slide swiper-slide-client">
+                <div class="container-img-slider">
+                    <a href="https://twitter.com/jeffbezos" target="blank
+                        "><img src="./img/index/slider-people/bezos.jpg" alt="foto-bezos"></a>
+
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
+                    finibus sed in dolor.
+                    Etiam iaculis, nibh a lobortis egestas, est urna sodales
+                </p>
+                <h2>Jeff Bezos</h2>
+                <h3>Free-PSD-Template.com Company</h3>
+            </div>
+        </div>
+        <div class="swiper-pagination  swiper-pagination-client"></div>
+    </div>
+</section>
+
+<!-- maps -->
+<div id="map" class="map"></div>
+
+<!-- Form -->
+<section id="form" class="form">
+    <div class="wrapper">
+        <div class="sub-wr-form">
+            <a class="logo-form" href="">
+                <div class="container-img-form">
+                    <img src="./img/index/form/logo-atlantida-form.png" alt="logo-atlantida">
+                </div>
+                <p>ATLANTIDA</p>
+            </a>
+
+
+            <div class="container-form">
+                <div class="col-40">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat
+                        ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla
+                        tortor
+                        non
+                        aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                    </p>
+
+                    <div class="col-25">
+                        <h2>ATLANTIDA STUDIO</h2>
+                        <p>
+                            Steven Bernson, Attorney at Law
+                            1556 Broadway, suite 416
+                            New York, NY, 10120, USA
+                        </p>
+                    </div>
+
+                    <div class="contacts">
+                        <a href="mailto:">E-mail: *****@gmail.com</a>
+                        <a href="tel:">+37533******</a>
+                    </div>
+                    <div class="social-networks soc-net-form">
                         <ul>
                             <li>
                                 <a href="">
                                     <svg viewBox="0 0 448 512">
                                         <path
-                                            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
+                                                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
                                         </path>
                                     </svg>
                                 </a>
@@ -73,7 +947,7 @@
                                 <a href="">
                                     <svg viewBox="0 0 512 512">
                                         <path
-                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
                                         </path>
                                     </svg>
                                 </a>
@@ -82,902 +956,46 @@
                                 <a href="">
                                     <svg viewBox="0 0 576 512">
                                         <path
-                                            d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
+                                                d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
                                         </path>
                                     </svg>
                                 </a>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Slider -->
-    <section class="atlantida-slider">
-        <div class="wrapper-slider">
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <picture>
-                            <source srcset="./img/index/slide/slide-1@1x.avif 1x,
-                                            ./img/index/slide/slide-1@2x.avif 2x,
-                                            ./img/index/slide/slide-1@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./img/index/slide/slide-1@1x.webp 1x,
-                                            ./img/index/slide/slide-1@2x.webp 2x,
-                                            ./img/index/slide/slide-1@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./img/index/slide/slide-1@2x.jpg 2x,
-                                         ./img/index/slide/slide-1@3x.jpg 3x" src="./img/index/slide/slide-1@1x.jpg"
-                                alt="Atlatida">
-                        </picture>
-                        <div class="text-slider">
-                            <h1>Design Studio and Digital Agency</h1>
-                            <h2>WE ARE ATLANTIDA.</h2>
-                            <a href="#about">Get Started</a>
+                <div class="col-60">
+                    <form action="#" method="post" autocomplete="off">
+                        <div class="col-30">
+                            <input class="text" type="text" name="name" placeholder="Name*">
+                            <input class="text" type="tel" name="phone" placeholder="Telephone*">
                         </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <picture>
-                            <source srcset="./img/index/slide/slide-2@1x.avif 1x,
-                                            ./img/index/slide/slide-2@2x.avif 2x,
-                                            ./img/index/slide/slide-2@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./img/index/slide/slide-2@1x.webp 1x,
-                                            ./img/index/slide/slide-2@2x.webp 2x,
-                                            ./img/index/slide/slide-2@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./img/index/slide/slide-2@2x.jpg 2x, 
-                                         ./img/index/slide/slide-2@3x.jpg 3x" src="./img/index/slide/slide-2@1x.jpg"
-                                alt="Atlatida">
-                        </picture>
-                        <div class="text-slider">
-                            <p>Design Studio and Digital Agency</p>
-                            <h2>Lorem, ipsum</h2>
-                            <a href="#about">Get Started</a>
+                        <div class="col-30">
+                            <input class="text" type="email" name="email" placeholder="E-mail*">
+                            <input class="text" type="text" name="website" placeholder="Website">
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev">
-                <svg viewBox="0 0 320 512">
-                    <path
-                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
-                    </path>
-                </svg>
-            </div>
-            <div class="swiper-button-next">
-                <svg viewBox="0 0 320 512">
-                    <path
-                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
-                    </path>
-                </svg>
-            </div>
-        </div>
-    </section>
-
-    <!-- About-as -->
-    <section id="about" class="about-as mobile">
-        <div class="wrapper">
-            <div class="sub-wrapper">
-                <div class="about-as-border-image">
-                    <picture>
-                        <source srcset="./img/index/about-as/about@1x.avif 1x,
-                                        ./img/index/about-as/about@2x.avif 2x" type="image/avif">
-
-                        <source srcset="./img/index/about-as/about@1x.webp 1x,
-                                        ./img/index/about-as/about@2x.webp 2x" type="image/webp">
-
-                        <img srcset="./img/index/about-as/about@2x.jpg 2x" src="./img/index/about-as/about@1x.jpg"
-                            alt="about-atlantida">
-                    </picture>
-                </div>
-                <h2 class="started section-title">ABOUT US</h2>
-                <p>
-                    Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in
-                    erat.
-                    Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque.
-                    Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in
-                    aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate
-                    id
-                    finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis
-                    pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor
-                    viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id
-                    tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante.
-                </p>
-                <div class="about-as-button">
-                    <a href="">Contact Us</a>
-                    <a href="">Portfolio</a>
-                </div>
-            </div>
-            <div class="about-row">
-                <div class="about-items">
-                    <img src="./img/index/about-as/icon/icon-1.png" alt="awards-winner">
-                    <h3>AWARDS
-                        WINNER</h3>
-                    <p>54</p>
-                </div>
-                <div class="about-items">
-                    <img src="./img/index/about-as/icon//icon-2.png" alt="jobs-done">
-                    <h3>JOBS
-                        DONE</h3>
-                    <p>1054</p>
-                </div>
-                <div class="about-items">
-                    <img src="./img/index/about-as/icon/icon-3.png" alt="happy-clients">
-                    <h3>HAPPY
-                        CLIENTS</h3>
-                    <p>120</p>
-                </div>
-                <div class="about-items">
-                    <img src="./img/index/about-as/icon/icon-4.png" alt="reviews-recieved">
-                    <h3>reviews
-                        recieved</h3>
-                    <p>54</p>
+                        <textarea class="textarea" name="message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Services -->
-    <section id="servis" class="services mobile">
-        <div class="wrapper">
-            <div class="sub-wrapper-services">
-                <h2 class="section-title">SERVICES</h2>
-                <p class="section-sub-title">Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut
-                    vehicula odio lorem in erat.
-                    Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque.
-                </p>
-            </div>
-            <div class="container-services">
-
-                <div class="items-services">
-                    <svg viewBox="0 0 32 32">
-                        <path
-                            d="M 6.8125 2.40625 L 5.40625 3.8125 L 7.5 5.90625 L 8.90625 4.5 Z M 25.1875 2.40625 L 23.09375 4.5 L 24.5 5.90625 L 26.59375 3.8125 Z M 16 3.03125 C 15.671875 3.035156 15.335938 3.054688 15 3.09375 C 14.988281 3.09375 14.980469 3.09375 14.96875 3.09375 C 10.914063 3.558594 7.6875 6.835938 7.125 10.875 C 6.675781 14.125 8.015625 17.070313 10.25 18.96875 C 11.207031 19.789063 11.796875 20.882813 12 22 L 12 28 L 14.28125 28 C 14.628906 28.597656 15.261719 29 16 29 C 16.738281 29 17.371094 28.597656 17.71875 28 L 20 28 L 20 24 L 20.09375 24 L 20.09375 22.8125 C 20.09375 21.347656 20.855469 19.867188 22.09375 18.71875 C 23.75 17.0625 25 14.707031 25 12 C 25 7.058594 20.933594 2.984375 16 3.03125 Z M 16 5.03125 C 19.863281 4.976563 23 8.140625 23 12 C 23 14.09375 22.03125 15.9375 20.6875 17.28125 L 20.71875 17.3125 C 19.375 18.566406 18.515625 20.207031 18.28125 22 L 13.90625 22 C 13.6875 20.285156 12.949219 18.628906 11.5625 17.4375 C 9.796875 15.933594 8.742188 13.675781 9.09375 11.125 C 9.53125 7.972656 12.085938 5.441406 15.21875 5.09375 C 15.480469 5.0625 15.742188 5.035156 16 5.03125 Z M 2 12 L 2 14 L 5 14 L 5 12 Z M 27 12 L 27 14 L 30 14 L 30 12 Z M 7.5 20.09375 L 5.40625 22.1875 L 6.8125 23.59375 L 8.90625 21.5 Z M 24.5 20.09375 L 23.09375 21.5 L 25.1875 23.59375 L 26.59375 22.1875 Z M 14 24 L 18 24 L 18 26 L 14 26 Z" />
-                    </svg>
-                    <h3>GRAPHIC
-                        DESIGN</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
-                        ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
-                        non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                        inceptos himenaeos.
-
-                    </p>
-                </div>
-
-                <div class="items-services">
-                    <svg viewBox="0 0 576 512">
-                        <path
-                            d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z">
-                        </path>
-                    </svg>
-                    <h3>WEBSITE
-                        DESIGN</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
-                        ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
-                        non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                        inceptos himenaeos.</p>
-                </div>
-
-                <div class="items-services">
-
-                    <svg viewBox="0 0 512 512">
-                        <path
-                            d="M396.8 352h22.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-192 0h22.4c6.4 0 12.8-6.4 12.8-12.8V140.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h22.4c6.4 0 12.8-6.4 12.8-12.8V204.8c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zM496 400H48V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16zm-387.2-48h22.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-22.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8z">
-                        </path>
-                    </svg>
-                    <h3>SEO &
-                        ANALITYCS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
-                        ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
-                        non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                        inceptos himenaeos.</p>
-                </div>
-
-                <div class="items-services">
-
-                    <svg viewBox="0 0 512 512">
-                        <path
-                            d="M256 8C119.3 8 8 119.2 8 256c0 136.7 111.3 248 248 248s248-111.3 248-248C504 119.2 392.7 8 256 8zM33 256c0-32.3 6.9-63 19.3-90.7l106.4 291.4C84.3 420.5 33 344.2 33 256zm223 223c-21.9 0-43-3.2-63-9.1l66.9-194.4 68.5 187.8c.5 1.1 1 2.1 1.6 3.1-23.1 8.1-48 12.6-74 12.6zm30.7-327.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-21.9 0-58.7-2.8-58.7-2.8-12-.7-13.4 17.7-1.4 18.4 0 0 11.4 1.4 23.4 2.1l34.7 95.2L200.6 393l-81.2-241.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-4.2 0-9.1-.1-14.4-.3C109.6 73 178.1 33 256 33c58 0 110.9 22.2 150.6 58.5-1-.1-1.9-.2-2.9-.2-21.9 0-37.4 19.1-37.4 39.6 0 18.4 10.6 33.9 21.9 52.3 8.5 14.8 18.4 33.9 18.4 61.5 0 19.1-7.3 41.2-17 72.1l-22.2 74.3-80.7-239.6zm81.4 297.2l68.1-196.9c12.7-31.8 17-57.2 17-79.9 0-8.2-.5-15.8-1.5-22.9 17.4 31.8 27.3 68.2 27.3 107 0 82.3-44.6 154.1-110.9 192.7z">
-                        </path>
-                    </svg>
-                    <h3>WORDPRESS
-                        PROGRAMING</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
-                        ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
-                        non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                        inceptos himenaeos.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- History -->
-    <section id="history" class="history mobile">
-        <div class="wrapper">
-            <div class="sub-wrapper-history .sub-wr">
-                <h2 class="section-title">HISTORY</h2>
-                <p class="section-sub-title ">
-                    In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros tortor non
-                    arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci vestibulum sit amet.
-
-                </p>
-            </div>
-
-            <div class="container-history">
-                <!-- 2021 -->
-                <div class="name-year-2021 name-year">2021</div>
-                <div class="column-history-2021 colum-history">
-                    <div class="items-history">
-                        <h3>Donec id lobortis tellus. Maecenas vel dignissim</h3>
-                        <p>07 October 2015</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
-                            consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
-                            fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos.
-                        </p>
-                    </div>
-
-                    <div class="items-history">
-                        <h3>Nam tincidunt, lacus sit amet ultrices </h3>
-                        <p>05 June 2015</p>
-                        <p>In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros
-                            tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci
-                            vestibulum sit amet. Donec quis faucibus lorem. </p>
-                    </div>
-
-                    <div class="items-history">
-                        <h3>Donec quis faucibus lorem</h3>
-                        <p>07 May 2015</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
-                            consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
-                            fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos.</p>
-                    </div>
-
-                    <div class="items-history">
-                        <h3>Nunc efficitur laoreet turpis sed auctor.</h3>
-                        <p>02 April 2015</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
-                            consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
-                            fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
-                            consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas.</p>
-                    </div>
-                </div>
-
-                <!-- 2021 -->
-                <div class="name-year-2020 name-year">2020</div>
-                <div class="column-history-2020 colum-history">
-                    <div class="items-history">
-                        <h3>Donec id lobortis tellus. Maecenas vel dignissim</h3>
-                        <p>07 October 2015</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
-                            consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas.
-
-                    </div>
-
-                    <div class="items-history">
-                        <h3>Nam tincidunt, lacus sit amet ultrices </h3>
-                        <p>05 June 2015</p>
-                        <p>In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut gravida eros
-                            tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies ante, eget mattis orci
-                            vestibulum sit amet. Donec quis faucibus lorem. </p>
-                    </div>
-                </div>
-
-                <!-- lamp -->
-                <div class="lamp name-year">
-                    <svg viewBox="0 0 32 32">
-                        <path
-                            d="M 6.8125 2.40625 L 5.40625 3.8125 L 7.5 5.90625 L 8.90625 4.5 Z M 25.1875 2.40625 L 23.09375 4.5 L 24.5 5.90625 L 26.59375 3.8125 Z M 16 3.03125 C 15.671875 3.035156 15.335938 3.054688 15 3.09375 C 14.988281 3.09375 14.980469 3.09375 14.96875 3.09375 C 10.914063 3.558594 7.6875 6.835938 7.125 10.875 C 6.675781 14.125 8.015625 17.070313 10.25 18.96875 C 11.207031 19.789063 11.796875 20.882813 12 22 L 12 28 L 14.28125 28 C 14.628906 28.597656 15.261719 29 16 29 C 16.738281 29 17.371094 28.597656 17.71875 28 L 20 28 L 20 24 L 20.09375 24 L 20.09375 22.8125 C 20.09375 21.347656 20.855469 19.867188 22.09375 18.71875 C 23.75 17.0625 25 14.707031 25 12 C 25 7.058594 20.933594 2.984375 16 3.03125 Z M 16 5.03125 C 19.863281 4.976563 23 8.140625 23 12 C 23 14.09375 22.03125 15.9375 20.6875 17.28125 L 20.71875 17.3125 C 19.375 18.566406 18.515625 20.207031 18.28125 22 L 13.90625 22 C 13.6875 20.285156 12.949219 18.628906 11.5625 17.4375 C 9.796875 15.933594 8.742188 13.675781 9.09375 11.125 C 9.53125 7.972656 12.085938 5.441406 15.21875 5.09375 C 15.480469 5.0625 15.742188 5.035156 16 5.03125 Z M 2 12 L 2 14 L 5 14 L 5 12 Z M 27 12 L 27 14 L 30 14 L 30 12 Z M 7.5 20.09375 L 5.40625 22.1875 L 6.8125 23.59375 L 8.90625 21.5 Z M 24.5 20.09375 L 23.09375 21.5 L 25.1875 23.59375 L 26.59375 22.1875 Z M 14 24 L 18 24 L 18 26 L 14 26 Z" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our-team -->
-    <section id="team" class="our-team mobile">
-        <div class="wrapper">
-            <div class="sub-wrapper-team">
-                <h2 class="section-title">OUR TEAM</h2>
-                <p class="section-sub-title">
-                    Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum
-                    dolor, sit amet pretium odio
-                    magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
-                    ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
-                </p>
-            </div>
-            <div class="container-team">
-                <div class="items-team">
-                    <div class="wrapper-img-team">
-                        <picture>
-                            <source srcset="./img/index/team/image-people-1@1x.avif 1x,
-                                        ./img/index/team/image-people-1@2x.avif 2x,
-                                        ./img/index/team/image-people-1@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./img/index/team/image-people-1@1x.webp 1x,
-                                        ./img/index/team/image-people-1@2x.webp 2x,
-                                        ./img/index/team/image-people-1@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./img/index/team/image-people-1@2x.jpg 2x,
-                                     ./img/index/team/image-people-1@2x.jpg 3x"
-                                src="./img/index/team/image-people-1@1x.jpg" alt="foto-team">
-                        </picture>
-                    </div>
-                    <div class="focus-team">
-                        <h3>Jilia Smith</h3>
-                        <p>Designe</p>
-                        <ul>
-                            <li><a href=""><svg viewBox="0 0 448 512">
-                                        <path
-                                            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
-                                        </path>
-                                    </svg></a></li>
-                            <li><a href=""> <svg viewBox="0 0 512 512">
-                                        <path
-                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-                                        </path>
-                                    </svg></a></li>
-                            <li><a href=""> <svg viewBox="0 0 576 512">
-                                        <path
-                                            d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
-                                        </path>
-                                    </svg></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="items-team">
-                    <div class="wrapper-img-team">
-                        <picture>
-                            <source srcset="./img/index/team/image-people-2@1x.avif 1x,
-                                        ./img/index/team/image-people-2@2x.avif 2x,
-                                        ./img/index/team/image-people-2@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./img/index/team/image-people-2@1x.webp 1x,
-                                        ./img/index/team/image-people-2@2x.webp 2x,
-                                        ./img/index/team/image-people-2@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./img/index/teame/image-people-2@2x.jpg 2x,
-                                     ./img/index/teame/image-people-2@2x.jpg 3x"
-                                src="./img/index/teame/image-people-2@1x.jpg" alt="foto-team">
-                        </picture>
-                    </div>
-                    <div class="focus-team">
-                        <h3>Jilia Smith</h3>
-                        <p>Designer</p>
-                        <ul>
-                            <li><a href=""><svg viewBox="0 0 448 512">
-                                        <path
-                                            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
-                                        </path>
-                                    </svg></a></li>
-                            <li><a href=""> <svg viewBox="0 0 512 512">
-                                        <path
-                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-                                        </path>
-                                    </svg></a></li>
-                            <li><a href=""> <svg viewBox="0 0 576 512">
-                                        <path
-                                            d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
-                                        </path>
-                                    </svg></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="items-team">
-                    <div class="wrapper-img-team">
-                        <picture>
-                            <source srcset="./img/index/team/image-people-3@1x.avif 1x,
-                                        ./img/index/team/image-people-3@2x.avif 2x,
-                                        ./img/index/team/image-people-3@3x.avif 3x" type="image/avif">
-
-                            <source srcset="./img/index/team/image-people-3@1x.webp 1x,
-                                        ./img/index/team/image-people-3@2x.webp 2x,
-                                        ./img/index/team/image-people-3@3x.webp 3x" type="image/webp">
-
-                            <img srcset="./img/index/team/image-people-3@2x.jpg 2x,
-                                     ./img/index/team/image-people-3@2x.jpg 3x"
-                                src="./img/index/team/image-people-3@1x.jpg" alt="foto-team">
-                        </picture>
-                    </div>
-                    <div class="focus-team">
-                        <h3>Jilia Smith</h3>
-                        <p>Designer</p>
-                        <ul>
-                            <li><a href=""><svg viewBox="0 0 448 512">
-                                        <path
-                                            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
-                                        </path>
-                                    </svg></a></li>
-                            <li><a href=""> <svg viewBox="0 0 512 512">
-                                        <path
-                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-                                        </path>
-                                    </svg></a></li>
-                            <li><a href=""> <svg viewBox="0 0 576 512">
-                                        <path
-                                            d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
-                                        </path>
-                                    </svg></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="wrapper">
-            <div class="sub-wrapper-portfolio">
-                <h2 class="section-title">PORTFOLIO</h2>
-                <p class="section-sub-title">Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum
-                    dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis,
-                    turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget
-                    risus.</p>
-            </div>
-            <div class="portfolio-buttom">
-                <a href="">ALL</a>
-                <a href="">BROCHURES </a>
-                <a href="">WEBSITE</a>
-                <a href="">LOGOS</a>
-            </div>
-        </div>
-        <div class="container-portfolio">
-            <div class="wr-img-60 img-1">
-                <img src="./img/index/portfolio/1.jpg " alt="family-photos">
-            </div>
-            <div class="wr-img-40 img-2">
-                <img src="./img/index/portfolio/2.jpg " alt="family-photos">
-            </div>
-            <div class="wr-img-30  img-3">
-                <img src="./img/index/portfolio/3.jpg " alt="family-photos">
-            </div>
-            <div class="wr-img-70  img-4">
-                <img src="./img/index/portfolio/4.jpg " alt="family-photos">
-            </div>
-            <div class="wr-img-40  img-5">
-                <img src="./img/index/portfolio/5.jpg " alt="family-photos">
-            </div>
-            <div class="wr-img-60  img-6">
-                <img src="./img/index/portfolio/6.jpg " alt="family-photos">
-            </div>
-            <div class="wr-img-70  img-7">
-                <img src="./img/index/portfolio/7.jpg " alt="family-photos">
-            </div>
-            <div class="wr-img-30  img-8">
-                <img src="./img/index/portfolio/8.jpg " alt="family-photos">
-            </div>
-        </div>
-    </section>
-
-    <!-- Prices -->
-    <section id="prices" class="prices mobile">
-        <div class="wrapper">
-            <div class="sub-wrapper-prices">
-                <h2 class="section-title">PRICES</h2>
-                <p class="section-sub-title">
-                    Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium
-                    odio
-                    magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
-                    ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
-                </p>
-            </div>
-            <div class="container-prices">
-
-                <div class="items-prices">
-                    <h3>BASIC</h3>
-                    <div class="wrap-img-prices">
-                        <img src="./img/index/prices/icon-prices/basic.png" alt="basic">
-                    </div>
-                    <p>10</p>
-                    <ul>
-                        <li>Full Access</li>
-                        <li>Unlimited Edition</li>
-                        <li>Full Backup</li>
-                        <li>Free Tea and Free Mockup</li>
-                        <li>Several Prices</li>
-                    </ul>
-                    <a href="">Sign Up</a>
-                </div>
-
-                <div class="items-prices">
-                    <h3>ADVANCED</h3>
-                    <div class="wrap-img-prices">
-                        <img src="./img/index/prices/icon-prices/advanced.png" alt="advanced">
-                    </div>
-
-                    <p>20</p>
-
-                    <ul>
-                        <li>Full Access</li>
-                        <li>Unlimited Edition</li>
-                        <li>Full Backup</li>
-                        <li>Free Tea and Free Mockup</li>
-                        <li>Several Prices</li>
-                    </ul>
-                    <a href="">Sign Up</a>
-                </div>
-
-                <div class="items-prices">
-                    <h3>PRO</h3>
-                    <div class="wrap-img-prices">
-                        <img src="./img/index/prices/icon-prices/pro.png" alt="pro">
-                    </div>
-
-                    <p>30</p>
-
-                    <ul>
-                        <li>Full Access</li>
-                        <li>Unlimited Edition</li>
-                        <li>Full Backup</li>
-                        <li>Free Tea and Free Mockup</li>
-                        <li>Several Prices</li>
-                    </ul>
-                    <a href="">Sign Up</a>
-                </div>
-
-
-            </div>
-        </div>
-
-
-    </section>
-
-    <!-- Looking -->
-    <section class="looking">
-        <div class="wrapper wr-looking">
-            <div class="wr-img-looking">
-                <img src="./img/index/looking/looking.png" alt="looking-for-quality">
-            </div>
-            <div class="text">
-                <h3>Looking for a quality and affordable for your next project ?</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus
-                    sed
-                    in dolor.
-                    Etiam iaculis, nibh a lobortis egestas, est urna sodales
-                </p>
-            </div>
-            <a href="">Purchase</a>
-        </div>
-    </section>
-
-    <!-- Blog -->
-    <section class="blog">
-        <div class="wrapper wr-blog">
-            <h2 class="section-title">BLOG</h2>
-            <p class="section-sub-title">
-                Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio
-                magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula,
-                ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
-            </p>
-        </div>
-
-        <div class="container-blog">
-            <div class="sub-container">
-                <a href="" class="container-img">
-                    <picture>
-                        <source srcset="./img/index/blog/img-1@1x.avif 1x,
-                                        ./img/index/blog/img-1@2x.avif 2x,
-                                        ./img/index/blog/img-1@3x.avif 3x" type="image/avif">
-
-                        <source srcset="./img/index/blog/img-1@1x.webp 1x,
-                                        ./img/index/blog/img-1@2x.webp 2x,
-                                        ./img/index/blog/img-1@3x.webp 3x" type="image/webp">
-
-                        <img srcset="./img/index/blog/img-1@2x.jpg 2x,
-                                     ./img/index/blog/img-1@3x.jpg 3x" src="./img/index/blog/img-1@1x.jpg"
-                            alt="picture-blog">
-                    </picture>
-                </a>
-                <div class="text-blog">
-                    <h4>14 Aug 2015 / By Admin</h4>
-                    <a href="">Donec id lobortis tellus Maecenas.</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
-                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
-                    </p>
-                </div>
-            </div>
-            <div class="sub-container">
-                <a href="" class="container-img">
-                    <picture>
-                        <source srcset="./img/index/blog/img-2@1x.avif 1x,
-                                        ./img/index/blog/img-2@2x.avif 2x,
-                                        ./img/index/blog/img-2@3x.avif 3x" type="image/avif">
-
-                        <source srcset="./img/index/blog/img-2@1x.webp 1x,
-                                        ./img/index/blog/img-2@2x.webp 2x,
-                                        ./img/index/blog/img-2@3x.webp 3x" type="image/webp">
-
-                        <img srcset="./img/index/blog/img-2@2x.jpg 2x,
-                                    ./img/index/blog/img-2@3x.jpg 3x" src="./img/index/blog/img-2@1x.jpg"
-                            alt="picture-blog">
-                    </picture>
-                </a>
-                <div class="text-blog">
-                    <h4>14 Aug 2015 / By Admin</h4>
-                    <a href="">Donec id lobortis tellus Maecenas.</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
-                        ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor
-                    </p>
-                </div>
-            </div>
-            <div class="sub-container">
-                <a href="" class="container-img">
-                    <picture>
-                        <source srcset="./img/index/blog/img-3@1x.avif 1x,
-                                        ./img/index/blog/img-3@2x.avif 2x,
-                                        ./img/index/blog/img-3@3x.avif 3x" type="image/avif">
-
-                        <source srcset="./img/index/blog/img-3@1x.webp 1x,
-                                        ./img/index/blog/img-3@2x.webp 2x,
-                                        ./img/index/blog/img-3@3x.webp 3x" type="image/webp">
-
-                        <img srcset="./img/index/blog/img-3@2x.jpg 2x,
-                                    ./img/index/blog/img-3@3x.jpg 3x" src="./img/index/blog/img-2@1x.jpg"
-                            alt="Atlatida">
-                    </picture>
-                </a>
-                <div class="text-blog">
-                    <h4>14 Aug 2015 / By Admin</h4>
-                    <a href="">Donec id lobortis tellus Maecenas.</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
-                        ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas.
-
-                    </p>
-                </div>
-            </div>
-            <div class="sub-container">
-                <a href="" class="container-img">
-                    <picture>
-                        <source srcset="./img/index/blog/img-4@1x.avif 1x,
-                                        ./img/index/blog/img-4@2x.avif 2x,
-                                        ./img/index/blog/img-4@3x.avif 3x" type="image/avif">
-
-                        <source srcset="./img/index/blog/img-4@1x.webp 1x,
-                                        ./img/index/blog/img-4@2x.webp 2x,
-                                        ./img/index/blog/img-4@3x.webp 3x" type="image/webp">
-
-                        <img srcset="./img/index/blog/img-4@2x.jpg 2x,
-                                    ./img/index/blog/img-4@3x.jpg 3x" src="./img/index/blog/img-4@1x.jpg"
-                            alt="Atlatida">
-                    </picture>
-                </a>
-                <div class="text-blog">
-                    <h4>14 Aug 2015 / By Admin</h4>
-                    <a href="">Donec id lobortis tellus Maecenas.</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat
-                        ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas.
-
-                    </p>
-                </div>
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-    <!-- Clients -->
-    <section class="clients mobile">
-        <div class="wrapper">
-            <div class="sub-wrapper-clients">
-                <h2 class="section-title">CLIENTS</h2>
-                <p class="section-sub-title">
-                    Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium
-                    odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat
-                    vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="clients-logo">
-            <ul>
-                <li>
-                    <a href=""><img src="./img/index/clients/1.png" alt="brando-logo"></a>
-                </li>
-                <li>
-                    <a href=""><img src="./img/index/clients/2.png" alt="workwear-logo"></a>
-                </li>
-                <li>
-                    <a href=""><img src="./img/index/clients/3.png" alt="hamburger-logo"></a>
-                </li>
-                <li>
-                    <a href=""><img src="./img/index/clients/4.png" alt="motocycles-logo"></a>
-                </li>
-                <li>
-                    <a href=""><img src="./img/index/clients/5.png" alt="cassandra-logo"></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Slider human -->
-    <section class="slider-personal">
-
-
-        <!-- Slider main container -->
-        <div class="swiper-container swiper-container-client">
-            <!-- Additional required wrapper  -->
-            <div class="swiper-wrapper swiper-wrapper-client">
-
-                <!-- Slides -->
-                <div class="swiper-slide swiper-slide-client">
-                    <div class="container-img-slider">
-                        <a href="https://twitter.com/elonmusk" target="blank">
-                            <img src="./img/index/slider-people/mask.jpg" alt="foto-musk"></a>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
-                        finibus sed in dolor.
-                        Etiam iaculis, nibh a lobortis egestas, est urna sodales
-                    </p>
-                    <h2>Elon Musk</h2>
-                    <h3>Free-PSD-Template.com Company</h3>
-                </div>
-
-                <div class="swiper-slide swiper-slide-client">
-                    <div class="container-img-slider">
-                        <a href="https://twitter.com/warrenbuffett" target="blank
-                        "><img src="./img/index/slider-people/buffet.jpg" alt="foto-buffet"></a>
-
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
-                        finibus sed in dolor.
-                        Etiam iaculis, nibh a lobortis egestas, est urna sodales
-                    </p>
-                    <h2>Warren Buffett
-                    </h2>
-                    <h3>Free-PSD-Template.com Company</h3>
-                </div>
-
-                <div class="swiper-slide swiper-slide-client">
-                    <div class="container-img-slider">
-                        <a href="https://twitter.com/jeffbezos" target="blank
-                        "><img src="./img/index/slider-people/bezos.jpg" alt="foto-bezos"></a>
-
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
-                        finibus sed in dolor.
-                        Etiam iaculis, nibh a lobortis egestas, est urna sodales
-                    </p>
-                    <h2>Jeff Bezos</h2>
-                    <h3>Free-PSD-Template.com Company</h3>
-                </div>
-            </div>
-            <div class="swiper-pagination  swiper-pagination-client"></div>
-        </div>
-    </section>
-
-    <!-- maps -->
-    <div id="map" class="map"></div>
-
-    <!-- Form -->
-    <section id="form" class="form">
-        <div class="wrapper">
-            <div class="sub-wr-form">
-                <a class="logo-form" href="">
-                    <div class="container-img-form">
-                        <img src="./img/index/form/logo-atlantida-form.png" alt="logo-atlantida">
-                    </div>
-                    <p>ATLANTIDA</p>
-                </a>
-
-
-                <div class="container-form">
-                    <div class="col-40">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
-                            consequat
-                            ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla
-                            tortor
-                            non
-                            aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-                        </p>
-
-                        <div class="col-25">
-                            <h2>ATLANTIDA STUDIO</h2>
-                            <p>
-                                Steven Bernson, Attorney at Law
-                                1556 Broadway, suite 416
-                                New York, NY, 10120, USA
-                            </p>
-                        </div>
-
-                        <div class="contacts">
-                            <a href="mailto:">E-mail: *****@gmail.com</a>
-                            <a href="tel:">+37533******</a>
-                        </div>
-                        <div class="social-networks soc-net-form">
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <svg viewBox="0 0 448 512">
-                                            <path
-                                                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <svg viewBox="0 0 512 512">
-                                            <path
-                                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <svg viewBox="0 0 576 512">
-                                            <path
-                                                d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-60">
-                        <form action="#" method="post" autocomplete="off">
-                            <div class="col-30">
-                                <input class="text" type="text" name="name" placeholder="Name*">
-                                <input class="text" type="tel" name="phone" placeholder="Telephone*">
-                            </div>
-                            <div class="col-30">
-                                <input class="text" type="email" name="email" placeholder="E-mail*">
-                                <input class="text" type="text" name="website" placeholder="Website">
-                            </div>
-                            <textarea class="textarea" name="message" placeholder="Message"></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="wrapper">
-            <p>
-                Copyright &copy; 2015 Atlantida Theme
-            </p>
-        </div>
-    </footer>
-
-
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-    <script src="./js/maps.js"></script>
+    </div>
+</section>
+
+<footer>
+    <div class="wrapper">
+        <p>
+            Copyright &copy; 2015 Atlantida Theme
+        </p>
+    </div>
+</footer>
+
+
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+<script src="./js/maps.js"></script>
 </body>
 
 </html>

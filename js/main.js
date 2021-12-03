@@ -1,7 +1,7 @@
 const slider = document.querySelector('.swiper-container');
-const slider1 = document.querySelector('.swiper-container-client');
+const sliderClient = document.querySelector('.swiper-container-client');
 
-let mySwiper = new Swiper(slider, {
+new Swiper(slider, {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -29,7 +29,7 @@ let mySwiper = new Swiper(slider, {
     },
 });
 
-let mySwiper1 = new Swiper(slider1, {
+ new Swiper(sliderClient, {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -63,9 +63,12 @@ let mySwiper1 = new Swiper(slider1, {
     effect: 'slide',
 });
 
+
+
 const anchors = document.querySelectorAll('a[href^="#"]');
+
 for (let anchor of anchors) {
-    anchor.addEventListener('click', function (event) {
+    anchor.addEventListener('click', (event) => {
         event.preventDefault();
         const blockID = anchor.getAttribute('href')
         document.querySelector('' + blockID).scrollIntoView({
@@ -75,25 +78,30 @@ for (let anchor of anchors) {
     })
 }
 
-let burger = document.querySelector('.header-burger');
-burger.addEventListener('click', function () {
-    let menu = document.querySelector('.header');
-    let btn = document.querySelector('.header-burger');
-    let body = document.querySelector('body');
-    menu.classList.toggle('active');
-    btn.classList.toggle('active');
-    body.classList.toggle('lock');
+
+
+const header = document.getElementsByClassName('header')[0];
+
+header.addEventListener('click', (event) => {
+    const target = event.target;
+    const body = document.getElementsByTagName('body')[0];
+    const btnBurger = document.getElementsByClassName('header-burger')[0];
+
+
+    if (target.classList.contains('header-burger')) {
+        btnBurger.classList.toggle('active');
+        header.classList.toggle('active');
+        body.classList.toggle('lock')
+
+    } else if (target.tagName === 'LI' || target.tagName === 'A') {
+        btnBurger.classList.remove('active');
+        header.classList.remove('active');
+        body.classList.remove('lock')
+    }
 });
-let menuList = document.querySelector('.menuList')
-let listArr = menuList.children
-for (let i = 0; i < listArr.length; i++) {
-    listArr[i].addEventListener('click', function () {
-        let menu = document.querySelector('.header');
-        let body = document.querySelector('body');
-        body.classList.remove('lock');
-        menu.classList.remove('active');
-    })
-}
+
+
+
 
 
 
