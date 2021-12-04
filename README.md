@@ -1,7 +1,5 @@
 # Atlantida
 
----
-
 ## Description
 
 This site was made according to the layout (psd) for educational purposes. This website has two pages: a [home page](https://alekseyfgl.github.io/Atlantida/) and a [blog with
